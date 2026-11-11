@@ -33,3 +33,35 @@
 .blackkeys-nostaff{color:var(--muted);font-size:12px}
 @media(max-width:650px){.blackkeys-pair{grid-template-columns:1fr}.blackkeys-timing{grid-template-columns:repeat(2,minmax(0,1fr))}.blackkeys-board .controls-row{grid-template-columns:1fr}.blackkeys-signature span{font-size:11px;padding:9px 10px}}
 @media print{.blackkeys-mode button,.blackkeys-callout button{display:none!important}.blackkeys-board,.blackkeys-callout{break-inside:avoid}}
+
+/* Lesson 05: playable four-bar song sketches; no new JS or external assets. */
+.blackkeys-change{display:grid;grid-template-columns:minmax(0,1fr) 28px minmax(0,1fr);gap:13px;align-items:stretch;margin:22px 0 13px}
+.blackkeys-change-chord{min-width:0;background:var(--card);border:1px solid var(--border);border-radius:13px;padding:19px 20px;box-shadow:var(--shadow)}
+.blackkeys-change-chord .section-label{margin:0 0 8px}
+.blackkeys-change-chord h3{font-size:20px;margin:0 0 12px;line-height:1.3}
+.blackkeys-change-chord p{color:var(--muted);font-size:12px;margin:10px 0 0;line-height:1.6}
+.blackkeys-change-arrow{display:grid;place-items:center;color:var(--accent);font-size:27px;font-weight:800}
+.blackkeys-note-chips{display:flex;gap:7px;flex-wrap:wrap}
+.blackkeys-note-chips span{display:inline-grid;place-items:center;min-width:52px;padding:9px 12px;font:800 15px ui-monospace,monospace;border-radius:7px;color:var(--nav-ink);background:var(--nav)}
+.blackkeys-note-chips .moving-note{background:var(--gold);color:#242e27}
+.blackkeys-song-heading{font-size:22px;letter-spacing:-.03em;margin:33px 0 8px}
+.blackkeys-song-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin:21px 0 28px}
+.blackkeys-song-card{min-width:0;display:flex;flex-direction:column;gap:13px;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:21px;box-shadow:var(--shadow)}
+.blackkeys-song-top h4{font-size:20px;line-height:1.3;letter-spacing:-.025em;margin:10px 0 0}
+.blackkeys-song-bars{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.blackkeys-song-bars>div{border:1px solid var(--border);background:var(--paper);border-radius:9px;min-height:118px;padding:11px 12px;display:flex;flex-direction:column;gap:5px}
+.blackkeys-song-bars>div.is-response{background:var(--accent-soft);border-color:var(--accent)}
+.blackkeys-song-bars .bar-index{font:800 10px ui-monospace,monospace;color:var(--accent);letter-spacing:.1em}
+.blackkeys-song-bars strong{font-size:14px;line-height:1.4;overflow-wrap:anywhere}
+.blackkeys-song-bars small{color:var(--muted);font-size:11.5px;line-height:1.5}
+.blackkeys-song-result{font-size:13px;line-height:1.6;color:var(--muted);margin:0;flex:1}
+.blackkeys-song-card .action-button{align-self:flex-start;margin-top:auto}
+.blackkeys-song-workshop{margin:18px 0 23px}
+.blackkeys-song-workshop .section-label{margin-top:0}
+.blackkeys-song-workshop h3{font-size:22px;margin:5px 0 15px}
+.blackkeys-song-workshop .exercise-steps{gap:16px}
+.blackkeys-song-workshop .exercise-steps li{line-height:1.7}
+.blackkeys-song-workshop .blackkeys-finish{color:var(--ink);background:var(--accent-soft);padding:13px 16px;border-radius:8px;margin:18px 0 0;font-size:13px}
+@media(max-width:830px){.blackkeys-song-pair{grid-template-columns:1fr}}
+@media(max-width:540px){.blackkeys-change{grid-template-columns:1fr;gap:5px}.blackkeys-change-arrow{transform:rotate(90deg);height:25px}.blackkeys-change-chord{padding:16px}.blackkeys-song-card{padding:15px}.blackkeys-song-bars>div{padding:10px;min-height:108px}.blackkeys-note-chips span{min-width:45px;padding:8px 10px}}
+@media print{.blackkeys-song-card,.blackkeys-change,.blackkeys-song-workshop{break-inside:avoid;box-shadow:none}.blackkeys-song-card .action-button{display:none}}
