@@ -20,7 +20,7 @@ const lessons={
     chordText:'Play D♯–F♯–A♯ together. This three-black-key shape is your D♯ minor tonic triad.',
     callText:'D♯ → F♯ → G♯ → A♯. Rise through a short minor-colored idea.',
     replyText:'A♯ → G♯ → F♯ → D♯. Descend and let D♯ feel settled.',
-    closeText:'End on D♯. Sing a phrase, then answer on the keyboard while a D♯m pad or chord provides the home sound.'}
+    closeText:'End on D♯. Establish the D♯m chord first; sing while holding it, then release the keys and answer with a separate keyboard phrase.'}
 };
 let mode='major', focus='all', example=0;
 function setText(id,v){const target=$(id);if(target)target.textContent=v;}
@@ -54,7 +54,7 @@ function prompt(){
   `Play ${d.chordLabels} as a chord for four slow beats. Release it. Invent a three-note melody using only black keys, ending on ${d.homeLabel}.`,
   `Sing one original lyric line. Answer with just two or three black-key notes. Leave silence after your answer and resolve toward ${d.homeLabel}.`,
   `Play the Call and Response patterns, then reverse their rhythms. Keep ${d.homeLabel} as your home note.`,
-  `Change timbre to organ or synth pad. Sustain ${d.chordName}, improvise one short phrase, and shape the filter only during a safe pause.`
+  `Change timbre to organ or synth pad. Play ${d.chordName}, release the chord, improvise a short phrase, and shape the filter only during a safe pause.`
  ];
  setText('#blackkeys-prompt',prompts[example%prompts.length]);example++;
 }
