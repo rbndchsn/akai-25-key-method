@@ -21,6 +21,8 @@ Keep the **entire `lessons` folder together**. Its HTML pages share the local fi
 | `lesson_02_blues_lab.html` | Major/minor I–IV–V, clickable 12-bar form, blues scales and arpeggios |
 | `lesson_03_jazz_lab.html` | Major ii–V–I and minor iiø–V–i, shells and smooth inversions |
 | `lesson_04_scales_arpeggios.html` | Scales, arpeggios, melodic call-and-response exercises |
+| `lesson_05_playing_the_black_keys.html` | F♯ major / D♯ minor pentatonic improvisation; voice-and-synth exercises |
+| `assets/black-keys.css` / `assets/black-keys.js` | Lesson 05-specific offline presentation and interactions |
 | `assets/lessons.css` | Shared look-and-feel based on the existing illustrated Akai handbook |
 | `assets/music-theory.js` | Offline pitch, chord, scale, voicing and keyboard SVG engine |
 | `assets/lessons.js` | Interaction and page behavior |
