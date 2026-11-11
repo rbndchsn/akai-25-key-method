@@ -1,0 +1,1299 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Akai MPK Mini Play mk3 | Illustrated Offline How-To</title>
+<meta name="description" content="Illustrated and interactive offline field guide for the Akai MPK Mini Play mk3 with keyboard chord diagrams, Favorites, arpeggiator, control maps and camping setup."/>
+<style>
+:root{--paper:#f8f6ef;--paper-deep:#eeeade;--ink:#26352f;--muted:#627069;--accent:#236d65;--accent-soft:#e1f0e8;--gold:#c98d3a;--border:#d9ddd4;--card:#fffefa;--nav:#173b36;--nav-ink:#e8f3ec;--shadow:0 10px 40px rgba(19,51,45,.08);--code:#edf0e9;--hero:#193c37}
+body.dark{--paper:#15211f;--paper-deep:#1e2d29;--ink:#e4eee5;--muted:#a3b8ad;--accent:#80d6c5;--accent-soft:#24463e;--gold:#f0bc6a;--border:#3c5550;--card:#1d302b;--nav:#101a18;--nav-ink:#eaf5ec;--shadow:none;--code:#233b35;--hero:#163a35}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.66 ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration-color:rgba(35,109,101,.35);text-underline-offset:3px}a:hover{text-decoration-thickness:2px}button,select,input{font:inherit}button{cursor:pointer}button:focus-visible,select:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(--gold);outline-offset:3px}::selection{background:#f5d49b;color:#20302a}
+.page{display:grid;grid-template-columns:278px minmax(0,1fr);max-width:1800px;margin:0 auto}.side{background:var(--nav);color:var(--nav-ink);position:sticky;top:0;height:100vh;overflow-y:auto;padding:27px 18px;scrollbar-width:thin;z-index:2}.brand{padding:0 12px 24px;border-bottom:1px solid rgba(255,255,255,.16)}.brand-label{font:700 11px/1.4 ui-monospace,monospace;letter-spacing:.18em;color:#8fd8ca}.brand-name{font-weight:850;font-size:25px;line-height:1.15;letter-spacing:-.04em;margin:12px 0}.brand-desc{color:#c2d4cb;font-size:12px;line-height:1.6;margin:0}.side h2{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#a3c8bc;font-weight:750;margin:22px 12px 6px}.side nav{display:grid;gap:1px}.side nav a{color:#d5e7dd;text-decoration:none;display:grid;grid-template-columns:22px 1fr;gap:8px;align-items:start;font-size:12.2px;line-height:1.4;padding:9px 10px;border-radius:8px}.side nav a:hover,.side nav a.current{background:#315a51;color:#fff}.nav-num{font:600 10px ui-monospace,monospace;opacity:.68;padding-top:2px}.side .side-foot{margin:32px 12px 5px;border-top:1px solid rgba(255,255,255,.14);padding-top:16px;font-size:11px;color:#b4d0c2}.side .side-foot a{color:#b4e7dd}
+.main{min-width:0}.topbar{height:60px;position:sticky;top:0;background:color-mix(in srgb,var(--paper) 94%,transparent);backdrop-filter:blur(16px);z-index:2;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 50px;gap:15px}.breadcrumb{font-size:11px;font-weight:750;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}.actions{display:flex;gap:8px}.small-btn{border:1px solid var(--border);border-radius:8px;background:var(--card);color:var(--ink);padding:7px 13px;font-size:12px;font-weight:650}.small-btn:hover{border-color:var(--accent)}.menu-toggle{display:none}
+.paper{max-width:1000px;margin:0 auto;padding:42px 52px 100px}.hero{border-radius:18px;background:var(--hero);color:#f8fbf5;padding:48px 54px 42px;position:relative;overflow:hidden;margin-bottom:40px;box-shadow:var(--shadow)}.hero:before{content:"";position:absolute;border:3px solid rgba(209,181,105,.15);height:390px;width:390px;border-radius:50%;right:-135px;top:-145px}.hero:after{content:"";position:absolute;border:1px solid rgba(255,255,255,.17);height:240px;width:240px;border-radius:50%;right:-50px;top:12px}.hero> *{position:relative;z-index:1}.eyebrow{display:block;text-transform:uppercase;letter-spacing:.18em;font-size:10.5px;font-weight:850;color:var(--gold);margin-bottom:8px}.hero .eyebrow{color:#f3c37a}.hero h1{font-size:clamp(35px,4vw,55px);line-height:1.04;max-width:700px;margin:8px 0 15px;letter-spacing:-.055em;font-weight:850}.hero h1 em{color:#a8e2cb;font-style:normal}.hero p{max-width:640px;color:#d4e4db;font-size:17px;line-height:1.65;margin:0 0 25px}.hero-chips{display:flex;gap:8px;flex-wrap:wrap}.hero-chips span{font:700 11px ui-monospace,monospace;border:1px solid rgba(255,255,255,.22);border-radius:25px;padding:7px 11px;color:#eff6ef;background:rgba(255,255,255,.055)}.hero-footer{font-size:12px;color:#c3d5cc;margin-top:25px;display:flex;gap:15px;flex-wrap:wrap}
+.outline{background:var(--card);border:1px solid var(--border);border-radius:13px;padding:18px 23px;margin-bottom:40px;box-shadow:var(--shadow)}.outline h2{font-size:16px;letter-spacing:-.02em;margin:0 0 4px}.outline p{font-size:13px;color:var(--muted);margin:0}.outline .lesson-pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}.outline a{background:var(--accent-soft);padding:7px 10px;border-radius:8px;text-decoration:none;font-weight:750;font-size:12px}
+.guide{font-size:15px;line-height:1.73}.guide>h1:first-child{font-size:29px;letter-spacing:-.04em;line-height:1.2;margin-top:20px}.guide h2{font-size:29px;line-height:1.22;letter-spacing:-.04em;border-top:1px solid var(--border);padding-top:37px;margin:56px 0 23px;scroll-margin-top:90px}.guide h3{font-size:20px;letter-spacing:-.03em;line-height:1.3;margin:32px 0 13px;scroll-margin-top:90px}.guide h4{font-size:17px;margin:20px 0 10px}.guide p{margin:13px 0}.guide ul,.guide ol{padding-left:25px}.guide li{padding-left:3px;margin:5px 0}.guide hr{border:0;border-top:1px solid var(--border);margin:34px 0}.guide blockquote{border-left:4px solid var(--gold);background:var(--accent-soft);padding:11px 20px;border-radius:0 9px 9px 0;margin:20px 0;color:var(--ink)}.guide blockquote p{margin:0}.guide table{border-collapse:separate;border-spacing:0;display:block;overflow-x:auto;border:1px solid var(--border);border-radius:10px;font-size:13px;background:var(--card);max-width:100%;margin:17px 0 24px}.guide th{text-align:left;background:var(--paper-deep);font-size:11px;text-transform:uppercase;letter-spacing:.04em;white-space:normal}.guide th,.guide td{border-bottom:1px solid var(--border);padding:10px 13px;vertical-align:top;min-width:75px}.guide tr:last-child td{border-bottom:0}.guide td+td,.guide th+th{border-left:1px solid var(--border)}.guide code,.guide kbd,kbd{background:var(--code);border:1px solid var(--border);border-radius:5px;padding:1px 5px;font:12px/1.6 ui-monospace,"SFMono-Regular",Consolas,monospace}.guide pre{background:#142923;color:#e1efe5;overflow-x:auto;border-radius:9px;padding:17px}.guide pre code{background:none;border:0;color:inherit}.source-ref{font-size:11px;white-space:nowrap;text-decoration:none;vertical-align:1px}.guide>p:first-of-type{color:var(--muted)}
+.chapter-visual{border:1px solid var(--border);background:var(--card);border-radius:15px;margin:46px 0 33px;padding:28px 27px 25px;box-shadow:var(--shadow);scroll-margin-top:85px;overflow:hidden}.visual-heading h3{font-size:25px;letter-spacing:-.04em;margin:4px 0 9px}.visual-heading p{font-size:13.5px;line-height:1.6;color:var(--muted);margin:0 0 22px;max-width:660px}.visual-note{font-size:12px;line-height:1.55;background:var(--accent-soft);color:var(--ink);padding:12px 14px;border-left:3px solid var(--accent);border-radius:0 7px 7px 0;margin-top:18px}.visual-steps{display:flex;align-items:stretch;justify-content:space-between;gap:8px}.visual-step{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;text-align:center;background:var(--paper);padding:15px 10px;border:1px solid var(--border);border-radius:10px}.step-icon{font:850 29px ui-monospace,monospace;color:var(--accent);height:46px;display:flex;align-items:center}.step-icon span{font-size:12px;align-self:flex-end;margin-bottom:7px}.visual-step b{font-size:14px}.visual-step small{font-size:11px;color:var(--muted);line-height:1.4}.step-link{font-size:18px;align-self:center;color:var(--gold)}
+.bank-switch{display:inline-flex;background:var(--paper-deep);border:1px solid var(--border);border-radius:9px;padding:4px;gap:3px;max-width:100%}.bank-switch button{border:0;background:none;color:var(--muted);padding:9px 15px;border-radius:6px;text-align:left;font-weight:800;font-size:12px;transition:background .15s}.bank-switch button span{display:block;font-size:10px;font-weight:550;opacity:.8}.bank-switch button.active{background:var(--accent);color:white}.knobs-grid{margin-top:19px;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.knob-tile{background:var(--paper);border:1px solid var(--border);padding:17px 10px;text-align:center;border-radius:10px;display:flex;align-items:center;flex-direction:column}.knob-num{font:700 10px ui-monospace,monospace;color:var(--muted)}.knob-face{height:65px;width:65px;border-radius:50%;border:11px solid #24463e;background:radial-gradient(circle at 35% 30%,#5d8978,#1d443b);margin:10px auto 9px;position:relative;box-shadow:0 6px 10px rgba(0,0,0,.12),inset 0 3px 4px rgba(0,0,0,.3)}.knob-face:after{content:"";position:absolute;height:19px;width:4px;background:#f2ce86;top:-5px;left:calc(50% - 2px);border-radius:4px;transform:rotate(35deg);transform-origin:2px 28px}.knob-tile b{font-size:14px}.knob-tile small{font-size:11px;color:var(--muted);line-height:1.45}
+.fav-shell{display:grid;grid-template-columns:1fr 1fr;gap:20px}.fav-pads{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;align-content:start;background:#18322f;padding:14px;border-radius:12px}.fav-pad{aspect-ratio:1/1;display:flex;flex-direction:column;justify-content:space-between;background:#324d49;border:2px solid #54786f;color:#f1fff7;border-radius:9px;text-align:left;padding:8px;box-shadow:inset 0 0 18px rgba(0,0,0,.15);font-size:10px}.fav-pad span{font:750 11px ui-monospace,monospace;color:#b0cac1}.fav-pad b{font-size:9px;letter-spacing:.045em}.fav-pad:hover,.fav-pad.selected{background:#d29b51;color:#152c29;border-color:#f7d29b}.fav-pad.selected span{color:#533c24}.fav-readout{background:var(--paper);padding:20px;border:1px solid var(--border);border-radius:10px}.tiny-label,.mini-capsule{display:block;font:800 10px ui-monospace,monospace;letter-spacing:.09em;color:var(--muted)}.fav-readout h4,.chord-heading h4{font-size:21px;line-height:1.1;margin:12px 0 8px}.fav-patch{font-weight:700;color:var(--accent);font-size:14px}.fav-readout p{font-size:13px;line-height:1.5}.mini-capsule{display:inline-block;border-radius:6px;background:var(--accent-soft);padding:6px 8px;line-height:1.4}.flow-band{margin-top:14px;display:grid;grid-template-columns:repeat(5,1fr);gap:3px}.flow-band span{background:var(--accent-soft);font:800 9px ui-monospace,monospace;color:var(--accent);padding:9px 5px;text-align:center;border-radius:3px}
+.controls-row{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0}.controls-row label{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;display:flex;gap:5px;flex:1;min-width:140px;flex-direction:column;color:var(--muted)}select{border:1px solid var(--border);border-radius:8px;background:var(--paper);color:var(--ink);padding:10px 13px;min-height:43px;max-width:100%;font-size:13px}.arp-stage{border:1px solid var(--border);background:var(--paper);border-radius:10px;padding:17px 12px}.ruler{display:flex;justify-content:space-between;color:var(--muted);font:700 10px ui-monospace,monospace;margin:0 4px 11px}.arp-grid{display:grid;gap:4px}.arp-step{background:var(--accent-soft);border-top:5px solid var(--accent);min-height:85px;padding:8px 3px 6px;border-radius:4px;text-align:center;display:flex;flex-direction:column;justify-content:space-between;min-width:0}.arp-step.swung{transform:translateY(10px);border-top-color:var(--gold)}.arp-step b{font:850 15px ui-monospace,monospace}.arp-step small{font:650 9px ui-monospace,monospace;color:var(--muted)}.arp-sequence{font:750 12px/1.5 ui-monospace,monospace;color:var(--accent);margin:13px 4px 0;overflow-wrap:anywhere}
+.chord-heading{display:flex;gap:16px;justify-content:space-between;align-items:end;margin:24px 0 16px}.chord-heading h4{font-size:27px;margin:4px 0}.chord-heading p{color:var(--accent);font-size:15px;font-weight:800;margin:0}.formula{background:var(--accent-soft);border-radius:9px;padding:10px 13px;max-width:200px}.formula span{display:block;font:800 9px ui-monospace,monospace;color:var(--muted)}.formula strong{font:850 15px/1.7 ui-monospace,monospace;color:var(--accent)}.piano-wrap{background:#e7e5dc;border-radius:12px;padding:12px;overflow-x:auto}.piano-wrap svg{width:100%;height:auto;display:block;min-width:510px}.legend{display:flex;flex-wrap:wrap;gap:17px;font-size:11px;color:var(--muted);margin-top:11px}.legend span{display:flex;align-items:center;gap:6px}.legend i{display:inline-block;width:13px;height:13px;border-radius:3px;border:1px solid #9dafa6}.legend-root{background:#1e7769}.legend-chord{background:#f0c475}.legend-other{background:#f5f5f0}.keyboard-footnote{font-size:11px;color:var(--muted);margin-top:8px}
+.audio-route{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:20px}.route-device{flex:1;min-width:140px;min-height:125px;border:2px solid var(--border);border-radius:10px;background:var(--paper);text-align:center;padding:14px 7px;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:.25s}.route-device b{font-size:13px}.route-device small{font-size:10px;color:var(--muted)}.route-icon{font-size:30px;color:var(--accent)}.route-device.is-live{border-color:var(--accent);background:var(--accent-soft)}.route-device.is-muted{opacity:.43;filter:grayscale(1)}.route-arrow,.route-or{font:800 16px ui-monospace,monospace;color:var(--accent)}.route-or{font-size:10px;color:var(--muted)}.route-comment{font-weight:700;font-size:13px;color:var(--accent)}
+.practice-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:11px}.practice-card{display:grid;grid-template-columns:24px 1fr;grid-template-rows:auto auto auto;column-gap:8px;align-items:start;border:1px solid var(--border);background:var(--paper);padding:15px;border-radius:10px;cursor:pointer}.practice-card input{grid-column:1;grid-row:1/4;width:17px;height:17px;margin:2px 0 0;accent-color:var(--accent)}.practice-number{font:850 10px ui-monospace,monospace;color:var(--accent)}.practice-card b{font-size:15px}.practice-card small{font-size:12px;line-height:1.45;color:var(--muted)}.practice-card:has(input:checked){background:var(--accent-soft);border-color:var(--accent)}.progress-readout{display:flex;gap:14px;align-items:center;margin-top:16px;font:750 11px ui-monospace,monospace;color:var(--muted)}.progress-track{flex:1;background:var(--paper-deep);border-radius:999px;height:9px;overflow:hidden}.progress-fill{height:100%;background:var(--accent);border-radius:999px;transition:width .3s}
+.footer{margin-top:55px;border-top:1px solid var(--border);padding-top:26px;color:var(--muted);font-size:12px}.footer strong{color:var(--ink)}
+@media(max-width:1100px){.page{grid-template-columns:238px minmax(0,1fr)}.topbar{padding:0 30px}.paper{padding:30px 32px 80px}.hero{padding:42px 38px}}
+@media(max-width:780px){.page{display:block}.side{position:fixed;left:0;top:0;transform:translateX(-105%);transition:transform .25s;width:min(290px,86vw);box-shadow:0 12px 35px rgba(0,0,0,.27)}.side.open{transform:none}.menu-toggle{display:inline-block}.topbar{padding:0 16px;height:56px}.paper{padding:21px 16px 75px}.hero{padding:33px 24px;border-radius:12px}.hero h1{font-size:37px}.visual-steps{display:grid;grid-template-columns:repeat(2,1fr)}.step-link{display:none}.knobs-grid{grid-template-columns:repeat(2,1fr)}.fav-shell{grid-template-columns:1fr}.audio-route{display:grid;grid-template-columns:1fr 30px 1fr}.route-device{min-width:0}.route-or{display:none}.route-device:last-child{grid-column:3}.chord-heading{align-items:start;flex-direction:column}.guide h2{font-size:26px}.practice-grid{grid-template-columns:1fr}.chapter-visual{padding:23px 17px}.guide table{font-size:12px}.guide th,.guide td{padding:8px}}
+@media(max-width:410px){.hero h1{font-size:32px}.hero p{font-size:15px}.breadcrumb{font-size:10px}.small-btn{padding:6px 9px}.bank-switch{width:100%}.bank-switch button{flex:1;padding:9px}.controls-row label{min-width:100%}.fav-pad{padding:5px}.fav-pad b{font-size:8px}.audio-route{grid-template-columns:1fr}.route-arrow,.route-or{display:none}.route-device:last-child{grid-column:1}}
+@media print{body{background:white!important;color:black!important;font-size:10pt!important}.page{display:block}.side,.topbar,.outline,.small-btn,.controls-row,.bank-switch,.practice-card input{display:none!important}.paper{max-width:none;padding:0}.hero{background:#183b34!important;color:white!important;print-color-adjust:exact;-webkit-print-color-adjust:exact;break-after:avoid}.hero h1{font-size:29pt!important}.guide{font-size:10pt!important}.guide h2{font-size:17pt;break-after:avoid}.guide h3{font-size:13pt;break-after:avoid}.chapter-visual{break-inside:avoid;box-shadow:none;margin:24px 0}.guide table{break-inside:auto;display:table;width:100%}.guide tr{break-inside:avoid}.guide a{color:#165b50;text-decoration:none}.footer{font-size:9pt}.piano-wrap svg{min-width:0}.practice-card{break-inside:avoid}.visual-note{border:1px solid #aaa}}
+
+/* PERFORMANCE COURSE CONNECTION • Links remain relative so the complete project works offline. */
+.side-course{background:rgba(255,255,255,.075);border:1px solid rgba(231,243,236,.19);border-radius:12px;padding:14px 12px;margin:22px 0 18px}
+.side-course .side-course-kicker{color:#efd099;font-size:10px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;margin-bottom:5px}
+.side-course a{color:#eef7ed;display:block;text-decoration:none;border-radius:7px;padding:5px 7px;font-size:12px}
+.side-course a:hover,.side-course a:focus-visible{background:rgba(255,255,255,.13)}
+.side-course a.course-main{font-size:16px;line-height:1.3;font-weight:800;color:#fff8dd;padding:9px 7px}
+.side-course .course-subnav{display:grid;gap:1px;border-top:1px solid rgba(231,243,236,.16);margin-top:7px;padding-top:8px}
+.course-launch{border-left:5px solid var(--gold);background:linear-gradient(130deg,var(--card),var(--accent-soft));}
+.course-launch .course-kicker{display:block;color:var(--accent);font-weight:800;text-transform:uppercase;letter-spacing:.13em;font-size:11px;margin-bottom:5px}
+.course-launch h2{font-size:24px;line-height:1.25;letter-spacing:-.035em;margin:0 0 8px}
+.course-launch p{margin:0 0 14px;max-width:700px}
+.course-launch .lesson-pills a:first-child{background:var(--accent);color:var(--paper);border-color:var(--accent);font-weight:800;text-decoration:none}
+.course-launch .lesson-pills a:first-child:hover{filter:brightness(.92)}
+.course-link-inline{display:inline-flex;align-items:center;gap:6px;color:var(--accent);font-weight:800;margin-top:12px}
+@media(max-width:780px){.course-launch{margin-top:10px}.course-top-link{font-size:12px;padding:6px 8px}}
+@media(max-width:440px){.course-launch h2{font-size:21px}.course-top-link{font-size:11px}}
+@media print{.side-course,.course-launch,.course-top-link,.course-link-inline{display:none!important}}
+</style></head>
+<body><div class="page">
+<aside class="side" id="side-nav" aria-label="Guide navigation"><div class="brand"><div class="brand-label">FIELD NOTES / 2026</div><div class="brand-name">AKAI<br/>PLAY mk3</div><p class="brand-desc">Your portable musical workshop.<br/>Illustrated offline learning edition.</p></div><div class="side-course" aria-label="Performance lesson navigation"><div class="side-course-kicker">New · 25-key performance method</div><a class="course-main" href="lessons/index.html">Open the lessons ↗</a><div class="course-subnav"><a href="lessons/lesson_01_chord_laboratory.html">01 · Chords & inversions</a><a href="lessons/lesson_02_blues_lab.html">02 · Blues I–IV–V</a><a href="lessons/lesson_03_jazz_lab.html">03 · Jazz ii–V–I</a><a href="lessons/lesson_04_scales_arpeggios.html">04 · Scales & arpeggios</a></div></div><h2>Explore the guide</h2><nav><a href="#contents"><span class="nav-num">•</span><span>Contents</span></a><a href="#1-read-this-first-what-you-own"><span class="nav-num">1</span><span>Read this first: what you own</span></a><a href="#2-the-15-minute-first-session"><span class="nav-num">2</span><span>The 15-minute first session</span></a><a href="#3-every-button-knob-and-jack"><span class="nav-num">3</span><span>Every button, knob and jack</span></a><a href="#4-selecting-exploring-and-shaping-128-sounds"><span class="nav-num">4</span><span>Selecting, exploring and shaping 128 sounds</span></a><a href="#5-the-eight-favorites-live-arrangements"><span class="nav-num">5</span><span>The eight Favorites: live arrangements</span></a><a href="#6-drum-pads-bank-ab-and-note-repeat"><span class="nav-num">6</span><span>Drum pads, bank A/B and Note Repeat</span></a><a href="#7-master-the-arpeggiator-and-latch"><span class="nav-num">7</span><span>Master the arpeggiator and Latch</span></a><a href="#8-chord-logic-for-a-guitarist"><span class="nav-num">8</span><span>Chord logic for a guitarist</span></a><a href="#9-compose-while-you-sing"><span class="nav-num">9</span><span>Compose while you sing</span></a><a href="#10-four-complete-practiceperformance-projects"><span class="nav-num">10</span><span>Four complete practice/performance projects</span></a><a href="#11-your-portable-camping-configuration"><span class="nav-num">11</span><span>Your portable camping configuration</span></a><a href="#12-optional-computerdaweditor-guide"><span class="nav-num">12</span><span>Optional computer/DAW/editor guide</span></a><a href="#13-what-it-cannot-do-and-external-gear"><span class="nav-num">13</span><span>What it cannot do and external gear</span></a><a href="#14-troubleshooting-and-questions"><span class="nav-num">14</span><span>Troubleshooting and questions</span></a><a href="#15-a-30-day-self-directed-plan"><span class="nav-num">15</span><span>A 30-day self-directed plan</span></a><a href="#16-printable-quick-reference"><span class="nav-num">16</span><span>Printable quick reference</span></a><a href="#17-research-notes-and-sources"><span class="nav-num">17</span><span>Research notes and sources</span></a></nav><div class="side-foot">Source: akai_howto_v1.md<br/>Original authoring: November 9, 2026.<p><a href="https://drive.google.com/drive/folders/1LgVGYQbc2RsVMF7agHYYcPm4Yt-NNztz">Open research folder online</a></p></div></aside>
+<div class="main"><div class="topbar"><div style="display:flex;gap:9px;align-items:center"><button class="small-btn menu-toggle" id="menu-toggle" aria-label="Toggle chapter menu" aria-expanded="false">☰ Chapters</button><span class="breadcrumb">THE PORTABLE MUSICIAN · V1 ILLUSTRATED</span></div><div class="actions"><a class="small-btn course-top-link" href="lessons/index.html" aria-label="Open the new 25-Key Performance Method lessons">🎹 Lessons ↗</a><button class="small-btn" id="toggle-theme">☾ Dark mode</button><button class="small-btn" id="print-guide">Print / PDF</button></div></div>
+<main class="paper"><header class="hero"><span class="eyebrow">A practical guide to music anywhere</span><h1>The instrument is small.<br/><em>The music isn't.</em></h1><p>The complete MPK Mini Play mk3 handbook, reimagined as a visual learning studio for chords, arpeggios, sound design, live arrangement and singing.</p><div class="hero-chips"><span>25 KEYS</span><span>128 SOUNDS</span><span>8 FAVORITES</span><span>4 AA BATTERIES</span><span>WORKS OFFLINE</span></div><div class="hero-footer"><span>Complete original guide preserved</span><span>7 interactive visual lessons</span><span>Single self-contained HTML file</span></div></header>
+<section class="outline course-launch" id="performance-lessons" aria-label="New 25-key performance lessons"><span class="course-kicker">Your next step · Four interactive lessons</span><h2>From the field guide to the performance method</h2><p>The full manual is right here. When you're ready to practice, open the dedicated lesson pages. Each has an interactive 25-key keyboard and exercises for chords, blues, jazz, scales and singing. The whole course works offline.</p><div class="lesson-pills"><a href="lessons/index.html">Start the lesson course ↗</a><a href="lessons/lesson_01_chord_laboratory.html">01 · Chords</a><a href="lessons/lesson_02_blues_lab.html">02 · Blues</a><a href="lessons/lesson_03_jazz_lab.html">03 · Jazz</a><a href="lessons/lesson_04_scales_arpeggios.html">04 · Scales</a></div></section><section class="outline" aria-label="Interactive visual lesson shortcuts"><h2>Start with the instrument, not the manual</h2><p>Go directly to a visual lesson, or read the complete guide below. All diagrams work without a connection.</p><div class="lesson-pills"><a href="#visual-chords">Explore chords</a><a href="#visual-favorites">Program your show</a><a href="#visual-knobs">Learn the knobs</a><a href="#visual-arp">See arpeggios</a><a href="#visual-routing">Campfire mode</a><a href="#visual-practice">Track practice</a></div></section>
+<article class="guide" id="complete-guide"><h1 id="akai-mpk-mini-play-mk3-the-complete-practical-how-to">AKAI MPK Mini Play mk3: The Complete Practical How-To</h1>
+<p><strong>Version:</strong> 1.0<br>
+<strong>Research completed:</strong> November 9, 2026<br>
+<strong>Instrument:</strong> <strong>Akai Professional MPK Mini Play mk3</strong>, the battery-powered version with 25 keys, internal sounds, and a built-in speaker.<br>
+<strong>Learning philosophy:</strong> A pocket-sized live-performance instrument. Get excellent at making musical choices, changing sounds, creating arrangements and singing while playing, without depending on a computer, an internet connection or a dedicated music room.</p>
+<blockquote>
+<p><strong>This is an independent, original field guide built from the manufacturer’s Play mk3 v1.1 manual, support tutorials, reviews and music theory references. It is not a substitute for safety instructions or the official manual.</strong> References <code>[S##]</code> are linked at the end, and topic-specific notes live in <code>research/</code>.</p>
+</blockquote>
+<hr>
+<h2 id="contents">Contents</h2>
+<ol>
+<li><a href="#1-read-this-first-what-you-own">Read this first: what you own</a></li>
+<li><a href="#2-the-15-minute-first-session">The 15-minute first session</a></li>
+<li><a href="#3-every-button-knob-and-jack">Every button, knob and jack</a></li>
+<li><a href="#4-selecting-exploring-and-shaping-128-sounds">Selecting, exploring and shaping 128 sounds</a></li>
+<li><a href="#5-the-eight-favorites-live-arrangements">The eight Favorites: live arrangements</a></li>
+<li><a href="#6-drum-pads-bank-ab-and-note-repeat">Drum pads, bank A/B and Note Repeat</a></li>
+<li><a href="#7-master-the-arpeggiator-and-latch">Master the arpeggiator and Latch</a></li>
+<li><a href="#8-chord-logic-for-a-guitarist">Chord logic for a guitarist</a></li>
+<li><a href="#9-compose-while-you-sing">Compose while you sing</a></li>
+<li><a href="#10-four-complete-practiceperformance-projects">Four complete practice/performance projects</a></li>
+<li><a href="#11-your-portable-camping-configuration">Your portable camping configuration</a></li>
+<li><a href="#12-optional-computerdaweditor-guide">Optional computer/DAW/editor guide</a></li>
+<li><a href="#13-what-it-cannot-do-and-external-gear">What it cannot do and external gear</a></li>
+<li><a href="#14-troubleshooting-and-questions">Troubleshooting and questions</a></li>
+<li><a href="#15-a-30-day-self-directed-plan">A 30-day self-directed plan</a></li>
+<li><a href="#16-printable-quick-reference">Printable quick reference</a></li>
+<li><a href="#17-research-notes-and-sources">Research notes and sources</a></li>
+</ol>
+<hr>
+<h2 id="1-read-this-first-what-you-own">1. Read this first: what you own</h2>
+<p>The <strong>MPK Mini Play mk3</strong> is unusual because it lives two lives. With no other device attached, it is a tiny portable instrument that makes its own sound: 128 keyboard programs, 10 drum kits, a speaker, headphones, eight Favorites, arpeggiator and sound-shaping controls. With USB connected to a computer, it can also transmit MIDI to software instruments and a DAW. The onboard keyboard is <strong>25 velocity-sensitive mini keys</strong>; it can move across ten octaves through Octave Up/Down, but only about <strong>two octaves can be physically played at a time</strong>. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a><a class="source-ref" href="#17-research-notes-and-sources" title="See source S02">[S02]</a></p>
+<h3 id="the-design-trade-off-that-matters">The design trade-off that matters</h3>
+<p>The standard <strong>MPK Mini mk3</strong> without <strong>Play</strong> does <strong>not</strong> contain its own audio engine or speaker. The <strong>MPK Mini Plus</strong> is a different model with extra features such as chord/scale and sequencing functions, but is not the device described here. Some online instructions mix the three. Use the exact words <strong>Play mk3</strong> when judging tutorials. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a><a class="source-ref" href="#17-research-notes-and-sources" title="See source S19">[S19]</a></p>
+<h3 id="the-five-foundations">The five foundations</h3>
+<table>
+<thead>
+<tr>
+<th>Foundation</th>
+<th>What it enables</th>
+<th>What it doesn't imply</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Internal sound engine</td>
+<td>Piano, organ, synthesizer, string and other sounds, without internet</td>
+<td>Loading arbitrary new samples or unlimited patch editing</td>
+</tr>
+<tr>
+<td>Eight Favorites</td>
+<td>Recall a complete sound-and-effects setup during a song</td>
+<td>Store recordings or whole compositions</td>
+</tr>
+<tr>
+<td>Arpeggiator with Latch</td>
+<td>Make a chosen sequence of notes cycle continuously</td>
+<td>Record a human-played melody or create an independent second keyboard part</td>
+</tr>
+<tr>
+<td>Drum pads / Note Repeat</td>
+<td>Live rhythmic hits, fast repeated taps</td>
+<td>Record your own beat and leave it playing autonomously</td>
+</tr>
+<tr>
+<td>Speaker / headphones</td>
+<td>Play privately or let nearby people listen</td>
+<td>Bluetooth headphones, microphone amplification or PA-scale sound</td>
+</tr>
+</tbody>
+</table>
+<p>The speaker is the part that makes campfire sharing possible. The earbuds are what make quiet practice possible. They are <strong>mutually exclusive outputs</strong>: plugging anything into the 3.5 mm rear output disables the built-in speaker. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a></p>
+<h3 id="specs-to-remember">Specs to remember</h3>
+<ul>
+<li>Width <strong>12.5 in</strong>, depth <strong>7.0 in</strong>, height <strong>2.3 in</strong>, weight <strong>1.9 lb</strong>. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S02">[S02]</a></li>
+<li><strong>Four AA alkaline batteries</strong> or USB-bus power. Akai markets <strong>14+ hours</strong> of battery operation, but that is not a guaranteed runtime for your particular speaker volume and batteries. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a><a class="source-ref" href="#17-research-notes-and-sources" title="See source S02">[S02]</a></li>
+<li>Rear: <strong>USB-B</strong>, <strong>3.5 mm stereo headphone/audio output</strong>, <strong>1/4-in (6.35 mm) TS sustain pedal input</strong>, USB/Battery power switch. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a></li>
+<li>No native Bluetooth, microphone input, internal recorder, standalone drum sequencer, split/layer keyboard engine, or conventional DIN MIDI ports documented. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a><a class="source-ref" href="#17-research-notes-and-sources" title="See source S13">[S13]</a></li>
+</ul>
+<hr>
+
+<section class="chapter-visual" aria-label="First-session visual guide">
+  <div class="visual-heading"><span class="eyebrow">01 / QUICK START</span><h3>From case to first song</h3><p>Everything on this path works without Wi-Fi, a phone, or a computer.</p></div>
+  <div class="visual-steps">
+    <div class="visual-step"><div class="step-icon">AA<span>×4</span></div><b>Power</b><small>Four AA batteries, rear switch to Battery</small></div>
+    <div class="step-link">→</div>
+    <div class="visual-step"><div class="step-icon">♫</div><b>Choose</b><small>Internal Sounds on, then Keys + encoder</small></div>
+    <div class="step-link">→</div>
+    <div class="visual-step"><div class="step-icon">▦</div><b>Save</b><small>Favorites + Internal Sounds + pad</small></div>
+    <div class="step-link">→</div>
+    <div class="visual-step"><div class="step-icon">♪</div><b>Perform</b><small>Favorites + pad to recall your next sound</small></div>
+  </div>
+  <div class="visual-note"><strong>Learn the distinction:</strong> saving a Favorite is not the same gesture as recalling it.</div>
+</section>
+<h2 id="2-the-15-minute-first-session">2. The 15-minute first session</h2>
+<p><strong>Goal:</strong> make music before studying menus. This is an instrument, not a software-installation project.</p>
+<h3 id="minute-02-power-and-first-sound">Minute 0–2: power and first sound</h3>
+<ol>
+<li>Place <strong>four AA batteries</strong> into the compartment on the underside. Check polarity. Alternatively, connect the included USB cable to a reliable USB power source.</li>
+<li>Set the rear power switch to the appropriate <strong>BATTERY</strong> or <strong>USB</strong> position. In battery mode, sliding to USB with no USB cable connected is effectively <strong>off</strong>; this prevents unnecessary battery drain. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a></li>
+<li>Turn the master <strong>Volume</strong> low initially.</li>
+<li>Make sure <strong>Internal Sounds</strong> is enabled; otherwise you may hear nothing despite the keys working. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a></li>
+<li>Press a few keys. Increase volume gradually.</li>
+</ol>
+<h3 id="minute-25-change-instrument">Minute 2–5: change instrument</h3>
+<ol>
+<li>Press <strong>Keys</strong>. The screen shows the current keyboard program.</li>
+<li>Rotate the <strong>selector encoder</strong> beside the screen. Play a few notes as you scroll.</li>
+<li>Locate one piano, one organ and one synthesizer sound you enjoy. Do not worry yet about exact patch numbers.</li>
+<li>Press <strong>Octave Down</strong> or <strong>Octave Up</strong> as needed; press <strong>both together</strong> to return to the center range. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a></li>
+</ol>
+<h3 id="minute-58-shape-one-sound">Minute 5–8: shape one sound</h3>
+<ol>
+<li>Choose an organ.</li>
+<li>Check <strong>Knob Bank A</strong> (red): experiment with <strong>Filter</strong>, <strong>Resonance</strong>, <strong>Reverb</strong>, <strong>Chorus</strong>.</li>
+<li>Change to <strong>Knob Bank B</strong> (green): experiment with <strong>Attack</strong>, <strong>Release</strong>, <strong>Low EQ</strong>, <strong>High EQ</strong>.</li>
+<li>Notice which adjustments change the emotional texture versus merely making the sound brighter or louder. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a></li>
+</ol>
+<h3 id="minute-811-save-two-favorites">Minute 8–11: save two Favorites</h3>
+<ol>
+<li>Choose piano and set your effects.</li>
+<li><strong>Hold Favorites + Internal Sounds together</strong>, then <strong>tap pad 1</strong> to <strong>save</strong> that combination.</li>
+<li>Choose organ and set it differently.</li>
+<li>Hold <strong>Favorites + Internal Sounds</strong> and tap <strong>pad 2</strong> to save.</li>
+<li>Now <strong>hold Favorites + tap pad 1</strong> to recall piano, then <strong>Favorites + pad 2</strong> for organ. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a><a class="source-ref" href="#17-research-notes-and-sources" title="See source S04">[S04]</a></li>
+</ol>
+<p>⚠️ <strong>Save vs recall are different gestures.</strong> Holding just Favorites <strong>recalls</strong>; holding Favorites <strong>and</strong> Internal Sounds together <strong>stores/overwrites</strong>. Know the distinction before improvising on stage.</p>
+<h3 id="minute-1115-make-a-miniature-song">Minute 11–15: make a miniature song</h3>
+<ul>
+<li>Four bars of piano on Favorite 1.</li>
+<li>Repeat four bars with a sung phrase.</li>
+<li>At a musical breath, hold Favorites + pad 2 to move to organ.</li>
+<li>Let the first organ verse use just a single-note figure; then play fuller chords with the <em>same</em> organ in the next verse.</li>
+<li>Finish with more active right-hand motion and a deliberate vocal climax.</li>
+</ul>
+<p><strong>Result:</strong> you have already used the instrument as a live arrangement system, without recording any loops.</p>
+<hr>
+
+<section class="chapter-visual" id="visual-knobs" aria-label="Interactive knob bank function map">
+ <div class="visual-heading"><span class="eyebrow">02 / CONTROL ATLAS</span><h3>Four knobs, eight musical controls</h3><p>Switch the bank to see what the same four physical knobs do. This is a functional map, not a scale drawing of the panel.</p></div>
+ <div class="bank-switch" role="group" aria-label="Choose knob bank"><button class="bank-btn active" data-bank="A" aria-pressed="true">BANK A <span>Sound & space</span></button><button class="bank-btn" data-bank="B" aria-pressed="false">BANK B <span>Envelope & EQ</span></button></div>
+ <div class="knobs-grid" id="knob-grid" aria-live="polite">
+  <div class="knob-tile"><span class="knob-num">01</span><div class="knob-face"></div><b>Filter</b><small>Darken or brighten the sound</small></div>
+  <div class="knob-tile"><span class="knob-num">02</span><div class="knob-face"></div><b>Resonance</b><small>Emphasize filter character</small></div>
+  <div class="knob-tile"><span class="knob-num">03</span><div class="knob-face"></div><b>Reverb</b><small>Add ambience and depth</small></div>
+  <div class="knob-tile"><span class="knob-num">04</span><div class="knob-face"></div><b>Chorus</b><small>Animate and thicken a sound</small></div>
+ </div>
+</section>
+<h2 id="3-every-button-knob-and-jack">3. Every button, knob and jack</h2>
+<p>The model-specific drawing is on <strong>page 4</strong> of the official v1.1 guide; knob details continue on pp.5–6 <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a>. Here is an operating-language translation of every numbered callout.</p>
+<h3 id="keys-and-pads">Keys and pads</h3>
+<ul>
+<li><strong>25 keybed keys:</strong> playable notes, velocity response. They also double as <strong>arpeggiator setting selectors</strong> when holding the Arp button. The keyboard does <em>not</em> provide a dedicated one-key chord function.</li>
+<li><strong>Eight drum pads:</strong> live drum sounds with Internal Sounds enabled; MIDI pads when working with software; Favorite recall/store selectors when the relevant button combination is held.</li>
+<li><strong>Pad Bank A/B:</strong> red versus green; gives access to two sets of eight pad positions. A drum kit can supply additional hits on the second bank; it isn't a second independent drum sequencer.</li>
+<li><strong>Octave Up/Down:</strong> transpose the whole playable key range across octaves. The device can reach an extended register, but cannot turn its 25 physical notes into an 88-key piano at once.</li>
+</ul>
+<h3 id="performance-buttons">Performance buttons</h3>
+<ul>
+<li><strong>Arpeggiator On/Off:</strong> start/stop automated cycling of played notes. Hold it while pressing a key bearing the desired arp setting label.</li>
+<li><strong>Tap Tempo:</strong> tap in beat time for the current <em>internal</em> clock. If you've previously configured <strong>external</strong> MIDI sync, Tap Tempo is disabled. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a><a class="source-ref" href="#17-research-notes-and-sources" title="See source S09">[S09]</a></li>
+<li><strong>Full Level:</strong> pads transmit/trigger at maximum velocity irrespective of hit strength. This is useful for strong, consistent kick/snare taps; it does not override key velocity. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a></li>
+<li><strong>Note Repeat:</strong> press to enable; then hitting a pad repeats it at the current rhythmic rate while held. Press again to disable. This does not memorize a drum pattern. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a></li>
+<li><strong>Keys button:</strong> shows/selects keyboard instrument via encoder.</li>
+<li><strong>Drums button:</strong> shows/selects a drum kit via encoder.</li>
+<li><strong>Favorites button:</strong> hold + pad to recall.</li>
+<li><strong>Internal Sounds:</strong> enable/disable built-in audio engine. With a DAW connected, disable it when you want to hear only the software synth. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a></li>
+<li><strong>Knob Bank A/B:</strong> swaps the physical four sound-shaping knobs between two functions each. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a></li>
+</ul>
+<h3 id="the-four-sound-design-knobs">The four sound-design knobs</h3>
+<table>
+<thead>
+<tr>
+<th>Knob</th>
+<th>Bank A, red</th>
+<th>Bank B, green</th>
+<th>Musical use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Filter</td>
+<td>Attack</td>
+<td>Darken/brighten sound; soften onset</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Resonance</td>
+<td>Release</td>
+<td>Accentuate filter character; lengthen fade after key release</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Reverb amount</td>
+<td>Low EQ</td>
+<td>Place sound in space; alter body/bass</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Chorus amount</td>
+<td>High EQ</td>
+<td>Add motion/thickness; alter crispness</td>
+</tr>
+</tbody>
+</table>
+<p>These are the <strong>eight sound-shaping targets</strong> that make a fixed sound library surprisingly flexible. They aren't eight separate knobs and don't make the unit a fully programmable synthesis workstation. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a><a class="source-ref" href="#17-research-notes-and-sources" title="See source S13">[S13]</a></p>
+<h3 id="display-selector-joystick-master-volume">Display, selector, joystick, master volume</h3>
+<ul>
+<li><strong>Display:</strong> selected patch/kit and menu data.</li>
+<li><strong>Rotating encoder/selector knob:</strong> choose sound or highlighted menu value.</li>
+<li><strong>X-Y thumbstick:</strong> expressive pitch bend and modulation/MIDI-CC behaviors. Listen to how specific sounds respond, then choose effects intentionally; it is not an XY mixing desk or audio looper. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a><a class="source-ref" href="#17-research-notes-and-sources" title="See source S13">[S13]</a></li>
+<li><strong>Master Volume:</strong> affects both speaker and rear headphone output. Turn low before inserting IEMs and when changing to a louder patch.</li>
+</ul>
+<h3 id="connections-on-the-rear">Connections on the rear</h3>
+<table>
+<thead>
+<tr>
+<th>Port/control</th>
+<th>Purpose</th>
+<th>Practical caution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Power switch</td>
+<td>Chooses USB or AA operation</td>
+<td>USB position with no USB cable switches off battery operation</td>
+</tr>
+<tr>
+<td>USB-B</td>
+<td>Power and MIDI data</td>
+<td>MIDI signals are not analog audio from the device</td>
+</tr>
+<tr>
+<td>3.5 mm headphones</td>
+<td>Wired stereo IEMs or suitable audio feed</td>
+<td><strong>Mutes onboard speaker</strong></td>
+</tr>
+<tr>
+<td>Sustain jack, 1/4-in TS</td>
+<td>Momentary-contact sustain pedal</td>
+<td>Sustain does not generate new chord parts; pedal sold separately</td>
+</tr>
+</tbody>
+</table>
+<p>There is <strong>no dedicated line output</strong>, microphone input or Bluetooth radio listed in Akai's specifications. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a><a class="source-ref" href="#17-research-notes-and-sources" title="See source S02">[S02]</a></p>
+<hr>
+<h2 id="4-selecting-exploring-and-shaping-128-sounds">4. Selecting, exploring and shaping 128 sounds</h2>
+<h3 id="what-are-the-sounds">What are the sounds?</h3>
+<p>The 128 keyboard sounds broadly follow familiar <strong>General MIDI families</strong>. Independent reviews identify the onboard palette as GM-style; the older Akai Play FAQ also describes 128 GM instruments, but contains other generation-specific inaccuracies. Use the GM chart as a <strong>discovery aid</strong>, not a guaranteed map of exact Play mk3 screen names or numbered presets. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S11">[S11]</a><a class="source-ref" href="#17-research-notes-and-sources" title="See source S13">[S13]</a>[S16–S18]</p>
+<table>
+<thead>
+<tr>
+<th>Generic GM program family</th>
+<th>Approximate 1-based range</th>
+<th>Why you might use it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Acoustic/electric piano</td>
+<td>1–8</td>
+<td>Intro, verses, rhythmic comping</td>
+</tr>
+<tr>
+<td>Chromatic percussion</td>
+<td>9–16</td>
+<td>Bell/keys contrasts</td>
+</tr>
+<tr>
+<td>Organ</td>
+<td>17–24</td>
+<td>Sustained harmony, climactic choruses</td>
+</tr>
+<tr>
+<td>Guitar</td>
+<td>25–32</td>
+<td>Percussive textures, unusual articulation</td>
+</tr>
+<tr>
+<td>Bass</td>
+<td>33–40</td>
+<td>Sparse left-hand lines or arp colors</td>
+</tr>
+<tr>
+<td>Strings / ensemble</td>
+<td>41–56</td>
+<td>Bridge tension, sustained pads and choir-like support</td>
+</tr>
+<tr>
+<td>Brass</td>
+<td>57–64</td>
+<td>Punchy attacks and accents</td>
+</tr>
+<tr>
+<td>Reed / pipe</td>
+<td>65–80</td>
+<td>Melodic lead or folk color</td>
+</tr>
+<tr>
+<td>Synth leads</td>
+<td>81–88</td>
+<td>Cutting hooks</td>
+</tr>
+<tr>
+<td>Synth pads</td>
+<td>89–96</td>
+<td>Atmospheric contrast</td>
+</tr>
+<tr>
+<td>Synth FX and other</td>
+<td>97–128</td>
+<td>Effects and dramatic timbral surprises</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Full list:</strong> <a href="https://drive.google.com/drive/folders/1jmNNLqu5Z8ITBsw-YQEslLYjlSqRSzX2"><code>research/08_general_midi_128_reference.md</code></a> lists 128 <em>standard GM programs</em>, including both MIDI value 0–127 and human ordinal 1–128. Confirm with your hardware before using numbers as concert cues.</p>
+<h3 id="find-a-sound-in-a-disciplined-way">Find a sound in a disciplined way</h3>
+<ol>
+<li>Play a consistent three-chord progression with every candidate patch. This reveals how a patch behaves under harmony, not just single-note preview.</li>
+<li>Test at low and medium velocity. With dynamic key response, attack affects musical character.</li>
+<li>Try the same sound through IEMs and speaker; don't confuse the speaker's physical limitations with the patch's potential. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S13">[S13]</a><a class="source-ref" href="#17-research-notes-and-sources" title="See source S14">[S14]</a></li>
+<li>Test whether the patch can sustain long notes, and whether <strong>Release</strong> makes endings more dramatic.</li>
+<li>Save favorites for musical roles: <strong>intimate</strong>, <strong>driving</strong>, <strong>atmospheric</strong>, <strong>climactic</strong>, rather than simply collecting eight unrelated 'best' patches.</li>
+</ol>
+<h3 id="build-one-cinematic-organ-without-external-gear">Build one 'cinematic organ' without external gear</h3>
+<ol>
+<li><strong>Keys → encoder</strong>: pick organ sound.</li>
+<li>Bank A <strong>Filter</strong>: adjust until it has the desired darkness or brightness.</li>
+<li>Bank A <strong>Resonance</strong>: modestly emphasize character; too much can become harsh.</li>
+<li>Bank A <strong>Chorus</strong>: increase for animated thickness; remember it is <strong>not a dedicated flanger</strong>.</li>
+<li>Bank A <strong>Reverb</strong>: use space to support sustained chords, but don't let it blur fast passages.</li>
+<li>Bank B <strong>Attack</strong>: compare immediate versus softened onset.</li>
+<li>Bank B <strong>Release</strong>: choose a natural cutoff for your song tempo.</li>
+<li>Bank B <strong>Low/High EQ</strong>: adjust for the built-in speaker or wired IEMs.</li>
+<li>Hold <strong>Favorites + Internal Sounds</strong> and tap a pad to save. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a></li>
+</ol>
+<p><strong>Experiment:</strong> store that same organ on two pads, one nearly dry and one more spacious. Switch live during a song at a phrase break. You are using <strong>arrangement</strong>, not installing a new synthesizer engine.</p>
+<hr>
+
+<section class="chapter-visual" id="visual-favorites" aria-label="Eight favorites live song planning diagram">
+ <div class="visual-heading"><span class="eyebrow">03 / LIVE ARRANGER</span><h3>Build an entire song with eight Favorites</h3><p>Tap a pad below to see an illustrative song section. These are example assignments; you must save them on the actual Akai.</p></div>
+ <div class="fav-shell"><div class="fav-pads" role="group" aria-label="Demo favorites pads">
+  <button class="fav-pad selected" data-fav="0"><span>01</span><b>PIANO</b></button><button class="fav-pad" data-fav="1"><span>02</span><b>ORGAN</b></button>
+  <button class="fav-pad" data-fav="2"><span>03</span><b>ORGAN+</b></button><button class="fav-pad" data-fav="3"><span>04</span><b>PAD</b></button>
+  <button class="fav-pad" data-fav="4"><span>05</span><b>STRINGS</b></button><button class="fav-pad" data-fav="5"><span>06</span><b>CHORUS</b></button>
+  <button class="fav-pad" data-fav="6"><span>07</span><b>LEAD</b></button><button class="fav-pad" data-fav="7"><span>08</span><b>FINALE</b></button>
+ </div><div class="fav-readout" aria-live="polite"><span class="tiny-label">SELECTED PERFORMANCE SLOT</span><h4 id="fav-title">01 / Quiet introduction</h4><div class="fav-patch" id="fav-patch">Dry electric piano</div><p id="fav-description">Introduce the motif with space for your voice.</p><span class="mini-capsule" id="fav-effect">Reverb: low · Chorus: low</span></div></div>
+ <div class="flow-band"><span>INTRO</span><span>VERSES</span><span>BUILD</span><span>BRIDGE</span><span>FINALE</span></div>
+ <div class="visual-note"><strong>Real-device shortcuts:</strong> hold <kbd>Favorites</kbd> + tap a pad to <strong>recall</strong>; hold <kbd>Favorites</kbd> + <kbd>Internal Sounds</kbd> + tap a pad to <strong>save</strong>.</div>
+</section>
+<h2 id="5-the-eight-favorites-live-arrangements">5. The eight Favorites: live arrangements</h2>
+<p>This may be the most valuable feature for your actual use case.</p>
+<h3 id="precisely-what-a-favorite-stores">Precisely what a Favorite stores</h3>
+<p>Akai defines a Favorite as a selection of <strong>keyboard (Keys) patch, drum (Drums) patch, and effects-knob settings</strong>. You can store up to <strong>eight</strong> Favorites <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a>. The documentation <strong>does not promise</strong> that a Favorite stores free-form audio loops, chord sequences, entire song progressions or independent layers.</p>
+<h3 id="recall-and-save-memorized">Recall and save, memorized</h3>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Physical gesture</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Save</strong></td>
+<td><strong>Hold Favorites + Internal Sounds</strong>, then tap destination pad 1–8</td>
+</tr>
+<tr>
+<td><strong>Recall</strong></td>
+<td><strong>Hold Favorites</strong>, then tap pad 1–8</td>
+</tr>
+<tr>
+<td><strong>Change sound without saving</strong></td>
+<td><strong>Keys</strong>, then rotate selector</td>
+</tr>
+<tr>
+<td><strong>Change drum kit without saving</strong></td>
+<td><strong>Drums</strong>, then rotate selector</td>
+</tr>
+</tbody>
+</table>
+<p>The Favorites occupy device slots <strong>globally</strong>. They are not separate eight-slot sets per song. If you make a different song, deliberately document or back up the existing bank before overwriting. Akai's editor can retrieve/send/save Favorites <a class="source-ref" href="#17-research-notes-and-sources" title="See source S05">[S05]</a><a class="source-ref" href="#17-research-notes-and-sources" title="See source S07">[S07]</a>.</p>
+<h3 id="an-eight-section-arrangement-map">An eight-section arrangement map</h3>
+<table>
+<thead>
+<tr>
+<th>Favorite</th>
+<th>Use</th>
+<th>Patch character</th>
+<th>What changes musically</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Intro</td>
+<td>Dry piano</td>
+<td>Clear statement of motif</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Verse 1</td>
+<td>Light organ</td>
+<td>Sparse intervals behind voice</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Verse 2</td>
+<td>Same organ, alternate EQ</td>
+<td>More motion; two-voice texture</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Verse 3</td>
+<td>Same organ, fuller chorus</td>
+<td>Triads, seventh chords, increased energy</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Pre-chorus</td>
+<td>String/choir</td>
+<td>Wider sustained notes, harmonic preparation</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Chorus</td>
+<td>Bright organ</td>
+<td>Strong rhythmic voicings</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Bridge</td>
+<td>Bell/synth lead</td>
+<td>Contrast and tension</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Final chorus</td>
+<td>Distinctively altered organ</td>
+<td>Major climax with vocal intensity and modulation</td>
+</tr>
+</tbody>
+</table>
+<p>A useful live trick is <strong>saving the same program with different effects</strong>. If you press two completely new keyboard patches, it may be a noticeable timbral jump. If you switch between two versions of the same organ patch, listeners hear a familiar identity transformed.</p>
+<h3 id="rehearse-the-physical-action">Rehearse the physical action</h3>
+<ul>
+<li>Start slow. Release the chord on the last eighth note before the change, press Favorite selection, land next chord on the downbeat.</li>
+<li>Test every transition for click/cutoff. Neither official documentation nor reviews establish that reverb tails sustain smoothly across <em>all</em> patch switches.</li>
+<li>Sing while practicing the gesture. Because you cannot operate a Favorite and play every key simultaneously, choose a convenient musical breath or a one-handed chord ending.</li>
+<li>Keep a paper or phone <strong>cue sheet</strong> with Favorite numbers. There is a template in <a href="https://drive.google.com/drive/folders/1jmNNLqu5Z8ITBsw-YQEslLYjlSqRSzX2"><code>research/12_song_preset_planner_template.md</code></a>.</li>
+</ul>
+<hr>
+<h2 id="6-drum-pads-bank-ab-and-note-repeat">6. Drum pads, bank A/B and Note Repeat</h2>
+<h3 id="choosing-a-kit">Choosing a kit</h3>
+<ul>
+<li>Press <strong>Drums</strong>, then use the selector encoder for one of <strong>10</strong> drum kits.</li>
+<li>Tap pads to play hits. Each bank has <strong>8</strong> pad locations; Bank A is red, B is green.</li>
+<li>A third-party professional review describes 16 drum sounds per kit accessed by the two banks. This is <strong>access</strong>, not a multitrack sequencer or 16 pads available simultaneously without bank change. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a><a class="source-ref" href="#17-research-notes-and-sources" title="See source S13">[S13]</a></li>
+</ul>
+<h3 id="full-level">Full Level</h3>
+<p>Press <strong>Full Level</strong> to make pad impacts consistently maximum velocity. This is useful for a strong live pulse if your pad-hitting dynamics are uneven. Turn it off when you want ghost notes and expressive accents. The keybed stays velocity sensitive independently. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a></p>
+<h3 id="note-repeat">Note Repeat</h3>
+<ul>
+<li>Press <strong>Note Repeat</strong> to enable.</li>
+<li>Strike/hold a pad to produce repeated hits at the current tempo/time division.</li>
+<li>Press <strong>Note Repeat</strong> again to disable. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a></li>
+</ul>
+<p>A simple live accompaniment: one pad holds a repeated hi-hat pulse while you add occasional snare and kick by hand. <strong>This is not saved drum programming</strong>; it stops according to the way you play the pad and function.</p>
+<h3 id="can-i-record-my-own-four-bar-drumbeat-and-let-it-continue">Can I record my own four-bar drumbeat and let it continue?</h3>
+<p><strong>No, not on the keyboard alone.</strong> Sound On Sound identifies the absence of a standalone drum sequencer or looper. Nothing in the manufacturer manual describes recording/playing back custom drum patterns. This was the most important feature boundary found in the research <a class="source-ref" href="#17-research-notes-and-sources" title="See source S13">[S13]</a>. A computer/DAW or an external audio looper is a different arrangement.</p>
+<hr>
+
+<section class="chapter-visual" id="visual-arp" aria-label="Interactive arpeggiator note sequence illustration">
+ <div class="visual-heading"><span class="eyebrow">04 / RHYTHM LAB</span><h3>See what the arpeggiator actually repeats</h3><p>This browser diagram illustrates note order and divisions using C–E–G. It does not record or generate a backing track on the Akai.</p></div>
+ <div class="controls-row"><label>Direction<select id="arp-direction"><option value="up">Up</option><option value="down">Down</option><option value="incl">Inclusive</option><option value="excl">Exclusive</option><option value="order">Order</option></select></label><label>Time division<select id="arp-division"><option value="4">Quarter notes</option><option value="8" selected>Eighth notes</option><option value="16">Sixteenth notes</option><option value="8t">Eighth triplets</option></select></label><label>Swing<select id="arp-swing"><option value="50">50% (straight)</option><option value="61">61% (swung)</option></select></label></div>
+ <div class="arp-stage"><div class="ruler" id="arp-ruler"><span>BAR 1</span><span>4/4 TIME</span></div><div id="arp-grid" class="arp-grid" aria-live="polite"></div><div class="arp-sequence" id="arp-sequence">C → E → G</div></div>
+ <div class="visual-note"><strong>Latch:</strong> holds the pattern after you release the keys, but pressing new keys changes the arpeggio. It is not an independent recorded keyboard layer.</div>
+</section>
+<h2 id="7-master-the-arpeggiator-and-latch">7. Master the arpeggiator and Latch</h2>
+<p>An arpeggiator can be a compositional partner because it turns <em>the notes you choose</em> into a rhythm. It is <strong>not</strong> a saved phrase or a backing track. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a></p>
+<h3 id="basic-start-adjustment-and-stop">Basic start, adjustment and stop</h3>
+<ol>
+<li>Select a keyboard patch, e.g., pluck or organ.</li>
+<li>Press <strong>Arpeggiator On/Off</strong> to turn it on.</li>
+<li>While <strong>holding</strong> that button, press the labeled <strong>1/8</strong> key to choose eighth notes; similarly choose Up/Down/Order/Random and other options.</li>
+<li>Press C–E–G together. Hear the broken triad.</li>
+<li>Enable <strong>Latch</strong> using the labeled key while holding the Arp button.</li>
+<li>Play C–E–G and release: it keeps cycling. If you play a new chord, the arp changes to the newly held notes.</li>
+<li>To stop a latched arp, press <strong>Arpeggiator On/Off</strong>. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a></li>
+</ol>
+<h3 id="all-documented-settings">All documented settings</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Choices</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Time division</td>
+<td>1/4, 1/4T, 1/8, 1/8T, 1/16, 1/16T, 1/32, 1/32T</td>
+<td>How often arp advances</td>
+</tr>
+<tr>
+<td>Mode</td>
+<td>Up, Down, Excl, Incl, Order, Rand</td>
+<td>Pitch cycling order</td>
+</tr>
+<tr>
+<td>Latch</td>
+<td>On/Off</td>
+<td>Keeps arp cycling after hand releases</td>
+</tr>
+<tr>
+<td>Arp octaves</td>
+<td>1, 2, 3, 4</td>
+<td>Pitch spread over octaves</td>
+</tr>
+<tr>
+<td>Swing</td>
+<td>50%, 55%, 57%, 59%, 61%, 64%</td>
+<td>Offbeat delay / groove</td>
+</tr>
+<tr>
+<td>Clock sync</td>
+<td>Internal or external MIDI</td>
+<td>Self-contained vs DAW-following clock</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Incl versus Excl:</strong> inclusive repeats the outermost notes when changing direction, exclusive plays the endpoints once at each turnaround. <strong>Order</strong> cycles notes in the order they were played. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a></p>
+<h3 id="tap-tempo-and-clock-warning">Tap Tempo and clock warning</h3>
+<p>The Tap Tempo button sets the arpeggiator rate when running off the keyboard's <strong>internal clock</strong>. If external clock is enabled, the button is disabled and a computer DAW must send synchronization for certain functions. If your isolated camping setup becomes strangely silent in arp mode, check this setting before assuming the keyboard is defective. Akai documents editing External clock through the MPK Editor <a class="source-ref" href="#17-research-notes-and-sources" title="See source S09">[S09]</a>.</p>
+<h3 id="can-you-play-something-over-a-running-arp">Can you play something over a running arp?</h3>
+<ul>
+<li><strong>Yes:</strong> live drum-pad accents can accompany a latched arpeggio. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S13">[S13]</a></li>
+<li><strong>No independent keyboard layer:</strong> using the same keyboard to strike a new set of notes replaces/changes the arp rather than giving you a separate free melodic instrument. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a></li>
+<li><strong>Yes, with extra equipment:</strong> an external audio looper or computer can capture one musical layer while you play another, but that changes the lightweight setup.</li>
+</ul>
+<h3 id="experiment-one-chord-six-feelings">Experiment: one chord, six feelings</h3>
+<p>Play C–E–G and cycle through Up, Down, Incl, Excl, Order, Rand. Hold constant the tempo, octave spread and patch so only order changes. Then adjust 50% vs 61% swing. Finally increase arp spread to two octaves. At the end, introduce live drum-pad accents. This isolates <em>compositional control</em> from sound quality.</p>
+<hr>
+
+<section class="chapter-visual chord-lab" id="visual-chords" aria-label="Interactive keyboard chord explorer">
+ <div class="visual-heading"><span class="eyebrow">05 / GUITAR → KEYS</span><h3>Chord laboratory</h3><p>Choose any root, chord quality, and inversion. The diagram shows the actual notes to press, using the interval logic you already know from guitar.</p></div>
+ <div class="controls-row"><label>Root note<select id="chord-root"><option value="0">C</option><option value="1">C♯</option><option value="2">D</option><option value="3">E♭</option><option value="4">E</option><option value="5">F</option><option value="6">F♯</option><option value="7">G</option><option value="8">A♭</option><option value="9">A</option><option value="10">B♭</option><option value="11">B</option></select></label><label>Chord type<select id="chord-quality"><option value="maj">Major</option><option value="min">Minor</option><option value="dim">Diminished</option><option value="aug">Augmented</option><option value="sus2">Sus2</option><option value="sus4">Sus4</option><option value="maj7" selected>Major 7</option><option value="7">Dominant 7</option><option value="min7">Minor 7</option><option value="m7b5">Half-diminished 7</option><option value="dim7">Diminished 7</option><option value="6">Major 6</option><option value="add9">Add9</option></select></label><label>Voicing<select id="chord-inversion"><option value="0">Root position</option><option value="1">First inversion</option><option value="2">Second inversion</option><option value="3">Third inversion</option></select></label></div>
+ <div class="chord-heading"><div><span class="tiny-label">PLAY THESE NOTES</span><h4 id="chord-name">Cmaj7</h4><p id="chord-notes">C · E · G · B</p></div><div class="formula"><span>INTERVALS FROM ROOT</span><strong id="chord-formula">0 · 4 · 7 · 11</strong></div></div>
+ <div class="piano-wrap"><svg id="chord-keyboard" role="img" aria-label="Two-octave keyboard diagram with chord tones highlighted" viewBox="0 0 730 194" xmlns="http://www.w3.org/2000/svg"><title>Keyboard diagram</title><rect x="0" y="0" width="730" height="194" rx="12" fill="#ece6d7"/></svg></div>
+ <div class="legend"><span><i class="legend-root"></i>Root</span><span><i class="legend-chord"></i>Other chord tones</span><span><i class="legend-other"></i>Other notes</span></div>
+ <p class="keyboard-footnote" id="chord-caption">This is a two-octave keyboard window, shifted to fit the voicing. Octave labels are illustrative, not a guarantee of your Akai's current octave setting.</p>
+ <div class="visual-note"><strong>Crucial distinction:</strong> this is an <em>interactive learning graphic inside the HTML</em>, not a one-finger chord feature on the MPK Mini Play mk3. On the instrument, you play the highlighted keys yourself.</div><a class="course-link-inline" href="lessons/lesson_01_chord_laboratory.html">Practice chords with Lesson 01: inversions & singing ↗</a>
+</section>
+<h2 id="8-chord-logic-for-a-guitarist">8. Chord logic for a guitarist</h2>
+<p>You already know what a dominant seventh <em>does</em> in a progression. On a keyboard you need a new map for <em>where the notes live</em>. The instrument will not independently manufacture a Cmaj7 from pressing only C, but the geometry is systematic and much more transparent than guitar fretboard patterns.</p>
+<h3 id="the-complete-keyboard-principle">The complete keyboard principle</h3>
+<p><strong>Every immediately adjacent key, black or white, is one semitone.</strong> A major triad consists of root +4 semitones +7. A minor triad differs only by lowering the third to +3. A diminished triad lowers the fifth as well: root +3 +6.</p>
+<p><strong>White-note example</strong> (each <code>|</code> is a key boundary, not an equal pitch interval between letter names):</p>
+<pre><code class="language-text">Natural note names: C | D | E | F | G | A | B | C
+Black keys:         C#  D#      F#  G#  A#
+Semitone steps:    C C# D D# E F F# G G# A A# B C
+                 ^ start at any root and COUNT semitones
+</code></pre>
+<h3 id="chord-formula-cheat-sheet">Chord formula cheat sheet</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Semitone recipe from root</th>
+<th>Example root C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Major</td>
+<td>0–4–7</td>
+<td>C E G</td>
+</tr>
+<tr>
+<td>Minor</td>
+<td>0–3–7</td>
+<td>C E♭ G</td>
+</tr>
+<tr>
+<td>Diminished</td>
+<td>0–3–6</td>
+<td>C E♭ G♭</td>
+</tr>
+<tr>
+<td>Augmented</td>
+<td>0–4–8</td>
+<td>C E G♯</td>
+</tr>
+<tr>
+<td>Sus2</td>
+<td>0–2–7</td>
+<td>C D G</td>
+</tr>
+<tr>
+<td>Sus4</td>
+<td>0–5–7</td>
+<td>C F G</td>
+</tr>
+<tr>
+<td>Major 7</td>
+<td>0–4–7–11</td>
+<td>C E G B</td>
+</tr>
+<tr>
+<td>Dominant 7</td>
+<td>0–4–7–10</td>
+<td>C E G B♭</td>
+</tr>
+<tr>
+<td>Minor 7</td>
+<td>0–3–7–10</td>
+<td>C E♭ G B♭</td>
+</tr>
+<tr>
+<td>Half-diminished 7</td>
+<td>0–3–6–10</td>
+<td>C E♭ G♭ B♭</td>
+</tr>
+<tr>
+<td>Diminished 7</td>
+<td>0–3–6–9</td>
+<td>C E♭ G♭ A</td>
+</tr>
+<tr>
+<td>Major 6</td>
+<td>0–4–7–9</td>
+<td>C E G A</td>
+</tr>
+<tr>
+<td>Add9</td>
+<td>0–4–7–14</td>
+<td>C E G D, usually D above root octave</td>
+</tr>
+</tbody>
+</table>
+<p><strong>A correction to a common phrasing:</strong> A <em>major seventh chord</em> (<code>Cmaj7</code>) is not a “major-seven scale chord” in the sense of pressing one note to create a new scale. It is a chord assembled from scale degrees 1–3–5–7: in C, <strong>C–E–G–B</strong>. The major scale is <strong>C–D–E–F–G–A–B</strong>, with semitone pattern <strong>2–2–1–2–2–2–1</strong>.</p>
+<h3 id="the-progression-exercise-that-replaces-tedious-sight-reading">The progression exercise that replaces tedious sight-reading</h3>
+<p>Start with <code>C – G – Am – F</code>:</p>
+<ol>
+<li>Play root-position triads with the right hand. This gets you accustomed to key geography.</li>
+<li>Next, invert each chord to <strong>minimize movement</strong>: keep common tones and move other fingers to nearest notes.</li>
+<li>Turn the same progression into <code>Cmaj7 – G7 – Am7 – Fmaj7</code> and listen for color changes.</li>
+<li>Try 3-note <em>shell voicings</em> instead of full four-note chords:
+<ul>
+<li>Cmaj7 → <code>C–E–B</code> (omit G)</li>
+<li>G7 → <code>G–B–F</code> (omit D)</li>
+<li>Am7 → <code>A–C–G</code> (omit E)</li>
+<li>Fmaj7 → <code>F–A–E</code> (omit C)</li>
+</ul>
+</li>
+<li>Sing an original melody while sustaining, pulsing or syncopating these chords. The melody is the compositional test.</li>
+</ol>
+<h3 id="why-inversions-are-more-useful-than-giant-spans">Why inversions are more useful than giant spans</h3>
+<p>A 25-key instrument cannot hold an enormous left-hand bass + right-hand four-octave arrangement. Inversions let you <em>suggest</em> harmonic richness while staying close to where your hand already is.</p>
+<p><code>C–E–G</code> (root), <code>E–G–C</code> (first inversion), and <code>G–C–E</code> (second inversion) are the same major triad. A sensible inversion may save several inches of motion and free mental capacity for singing.</p>
+<h3 id="for-your-organ-arrangement">For your organ arrangement</h3>
+<ul>
+<li><strong>Verse 1:</strong> C alone, or C + G. Let your voice tell the story.</li>
+<li><strong>Verse 2:</strong> C–E (two-note identity) or C–E–G (triad).</li>
+<li><strong>Verse 3:</strong> C–E–B (maj7 shell) or stronger C7 for dominant tension.</li>
+<li><strong>Final chorus:</strong> fuller rhythms and voicings plus alternate Favorite with stronger chorus/reverb, without exceeding what the small speaker can cleanly reproduce.</li>
+</ul>
+<p>A highly expressive composition can emerge from <strong>one timbre undergoing harmonic development</strong>. There is no need to change programs at every section.</p>
+<hr>
+<h2 id="9-compose-while-you-sing">9. Compose while you sing</h2>
+<p>The keyboard is an <strong>accompaniment</strong> instrument here. Your voice is an independent melodic line, not a MIDI track. The unit has no built-in microphone and cannot amplify or record your vocal by itself. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a></p>
+<h3 id="a-practical-songwriting-loop-without-any-electronic-looper">A practical songwriting loop without any electronic looper</h3>
+<ol>
+<li>Choose a comfortable key and an organ/piano Favorite.</li>
+<li>Hum one melodic sentence. Find a 2–4-chord progression that supports it.</li>
+<li>Play the same progression in three textures: single notes, two-note shells, full chords.</li>
+<li>Keep the vocal melody unchanged and determine which arrangement supports the words best.</li>
+<li>Create <strong>verse</strong> and <strong>chorus</strong> Favorites with deliberately different timbres or effects.</li>
+<li>Practice the sound change with a one-beat gap. A short silence can be <strong>dramatic</strong>, not a failure.</li>
+<li>Use an external notebook or, when available, a phone recorder to preserve ideas. The keyboard doesn't retain a song recording independently.</li>
+</ol>
+<h3 id="five-useful-arrangement-dimensions">Five useful arrangement dimensions</h3>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Less intense</th>
+<th>More intense</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Voicing density</td>
+<td>Single notes</td>
+<td>Triads / 7ths</td>
+</tr>
+<tr>
+<td>Register</td>
+<td>Tight middle range</td>
+<td>Higher or lower octave accent</td>
+</tr>
+<tr>
+<td>Rhythm</td>
+<td>Long sustained chords</td>
+<td>Rhythmic repeated stabs</td>
+</tr>
+<tr>
+<td>Timbre</td>
+<td>Soft piano / filtered organ</td>
+<td>Bright organ / synth lead</td>
+</tr>
+<tr>
+<td>Space</td>
+<td>Minimal reverb/chorus</td>
+<td>More spatial/revolving effect</td>
+</tr>
+</tbody>
+</table>
+<p>You don't need all five to change at once. Save the biggest texture for the final chorus. Be especially alert to voice-to-keyboard balance: a solo, unplugged human voice may not compete with every patch at maximum speaker volume outdoors.</p>
+<h3 id="a-first-performance-arc">A first performance arc</h3>
+<p>Intro: calm piano, establish a motif.<br>
+Verse 1: organ responds between sung phrases.<br>
+Verse 2: same organ, intervals underneath singing.<br>
+Verse 3: chords reveal harmonic depth.<br>
+Bridge: strings or synth pad, different harmonic color.<br>
+Final chorus: stronger organ voicings, adjusted effect amount, your strongest vocal phrase.<br>
+Outro: recover the original quiet piano motif.</p>
+<p>That is a <em>composition and performance</em>, not a product demo.</p>
+<hr>
+<h2 id="10-four-complete-practiceperformance-projects">10. Four complete practice/performance projects</h2>
+<h3 id="project-a-a-piano-becomes-an-organ-20-minutes">Project A: 'A piano becomes an organ' (20 minutes)</h3>
+<p><strong>Objective:</strong> fluent Favorite recall while keeping song time.</p>
+<ol>
+<li>Program Favorite 1 as dry electric piano, Favorite 2 as clean organ, Favorite 3 as chorused/reverberant version of Favorite 2.</li>
+<li>Play one eight-bar progression, slowly, using one Favorite per section.</li>
+<li>Count beats aloud and change only at bar boundaries.</li>
+<li>Sing a two-line melody over it.</li>
+<li>Record the cues in a paper song map.</li>
+<li>Don't increase tempo until preset changes stop interrupting the sung line.</li>
+</ol>
+<h3 id="project-b-the-chord-grows-up-20-minutes">Project B: 'The chord grows up' (20 minutes)</h3>
+<p><strong>Objective:</strong> make the <strong>same</strong> organ sonically more powerful through harmony.</p>
+<ol>
+<li>Pick a chord progression you already know on guitar, e.g., <code>Am–F–C–G</code>.</li>
+<li>Verse 1: one note per chord, played in a clear rhythmic figure.</li>
+<li>Verse 2: root+third / two-voice harmony.</li>
+<li>Verse 3: triads with nearest inversion.</li>
+<li>Final chorus: add one 7th or suspension at strategic moments; sing strongly, but stay in control of breathing.</li>
+<li>Try the same architecture on a completely different patch. What remains effective is composition, not patch novelty.</li>
+</ol>
+<h3 id="project-c-a-rhythmic-illusion-not-a-recorded-backing-track-15-minutes">Project C: 'A rhythmic illusion, not a recorded backing track' (15 minutes)</h3>
+<p><strong>Objective:</strong> understand arp + pads boundaries.</p>
+<ol>
+<li>Choose pluck patch; set arp <code>Up</code>, <code>1/8</code>, <code>Latch</code>, <code>1 octave</code>.</li>
+<li>Play <code>C–E–G</code> and release; it cycles.</li>
+<li>Tap snare and kick on the pads; try Full Level or Note Repeat on hi-hat.</li>
+<li>Change arpeggio to <code>Am</code> or <code>F</code> when desired. Hear how replacing its notes affects groove.</li>
+<li>Try <strong>not</strong> to play a keyboard melody atop it. Instead, sing the melody: your voice is already your independent part.</li>
+<li>Stop the arp explicitly using the Arp button.</li>
+</ol>
+<h3 id="project-d-campfire-ready-3-minutes-30-minutes">Project D: 'Campfire-ready 3 minutes' (30 minutes)</h3>
+<p><strong>Objective:</strong> one musical story from first note to final silence.</p>
+<ol>
+<li>Arrange 3 min: 15 s intro, 40 s verse, 40 s second verse, 30 s bridge, 45 s final chorus, 10 s finish.</li>
+<li>Use no more than 4–5 Favorites; complexity should serve the composition.</li>
+<li>Rehearse once on wired IEMs; keep the small speaker off while private.</li>
+<li>Stop; unplug IEMs, lower master volume and listen on speaker.</li>
+<li>Adjust voicings/effect density for the actual miniature speaker. Lower bass can be perceived less strongly outside.</li>
+<li>Rehearse a complete take <em>without internet or screen</em> and without touching a computer.</li>
+<li>Decide which bars deserve silence. Your final ending is part of the composition.</li>
+</ol>
+<hr>
+
+<section class="chapter-visual" id="visual-routing" aria-label="Interactive Akai audio signal route">
+ <div class="visual-heading"><span class="eyebrow">06 / CAMPFIRE SETUP</span><h3>One jack, two ways of playing</h3><p>Choose your output to see why the speaker and earbuds cannot play simultaneously.</p></div>
+ <div class="bank-switch output-choices" role="group" aria-label="Audio output mode"><button class="route-btn active" data-route="private" aria-pressed="true">Private practice <span>Earphones plugged in</span></button><button class="route-btn" data-route="shared" aria-pressed="false">Share a song <span>Earphones unplugged</span></button></div>
+ <div class="audio-route"><div class="route-device"><span class="route-icon">▤</span><b>Akai sound engine</b><small>25 keys · 128 sounds · 4 AA batteries</small></div><div class="route-arrow">→</div><div id="route-ear" class="route-device is-live"><span class="route-icon">◉</span><b>3.5 mm earbuds</b><small>Your 7Hz Zero:3</small></div><div class="route-or">OR</div><div id="route-speaker" class="route-device is-muted"><span class="route-icon">◖)))</span><b>Built-in speaker</b><small>Automatically muted while plugged in</small></div></div>
+ <p class="route-comment" id="route-comment">Headphones connected: practice silently and keep the speaker muted.</p>
+ <div class="visual-note"><strong>Before unplugging:</strong> lower the master volume, unplug your earbuds, then bring up the speaker slowly. A plugged-in looper also mutes the keyboard speaker.</div>
+</section>
+<h2 id="11-your-portable-camping-configuration">11. Your portable camping configuration</h2>
+<h3 id="what-goes-in-the-case">What goes in the case</h3>
+<ul>
+<li>Akai MPK Mini Play mk3.</li>
+<li>Wired <strong>7Hz Zero:3</strong> in-ear monitors with <strong>3.5 mm, no-mic</strong> plug.</li>
+<li>Four installed AA alkalines and a protected spare set.</li>
+<li>A simple chord/Favorite cue card.</li>
+<li>Optional: USB-B cable and power bank <strong>tested in advance</strong> with this particular keyboard, if you want a backup power source.</li>
+<li>Optional later: momentary sustain pedal, but it reduces setup simplicity.</li>
+</ul>
+<h3 id="use-the-keyboard-quietly">Use the keyboard quietly</h3>
+<p>Connect the 3.5 mm IEMs to the rear headphone output. This <strong>automatically mutes the internal speaker</strong>, so practice doesn't broadcast to your neighbors. Start the volume low and increase gradually. Remember that in-ear monitors reduce environmental awareness, important on a campsite. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a></p>
+<h3 id="share-a-song-with-people-nearby">Share a song with people nearby</h3>
+<ol>
+<li>Finish practicing and let the last note fade.</li>
+<li><strong>Reduce master volume</strong> before changing outputs.</li>
+<li>Unplug the 3.5 mm earphones. The speaker is available again.</li>
+<li>Select Favorite 1. Begin your song at a modest level.</li>
+<li>Balance voice with speaker rather than turning the speaker to distortion. MusicTech found the speaker can distort near its upper output levels. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S14">[S14]</a></li>
+</ol>
+<h3 id="protecting-the-instrument">Protecting the instrument</h3>
+<p>The carrying case is for transport protection, not permission to expose electronics to water, dust or heat. Keep the keyboard inside the case while moving; take it out to play on a stable dry surface. Avoid sparks, embers, morning dew, wet grass and sand in the keybed. Don't crush the spring-mounted thumbstick under other gear. Protect spare batteries from contact with keys, coins or other metal. Remove them for extended storage.</p>
+<h3 id="battery-facts-vs-assumptions">Battery facts vs assumptions</h3>
+<ul>
+<li>Akai specifies <strong>4 AA alkaline batteries</strong> or USB power for the <strong>mk3</strong>. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a></li>
+<li>Its <strong>14+ hour</strong> claim is marketing, not an independent guarantee of uninterrupted loudspeaker operation. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S02">[S02]</a></li>
+<li>A popular Akai FAQ talking about <strong>3 AA</strong> describes the <em>older Play</em>. Do <strong>not</strong> follow that for the mk3. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S11">[S11]</a></li>
+<li>The USB connector is not described as charging your AA batteries. A USB power bank may power the device, but compatibility with any specific bank's auto-off behavior needs testing.</li>
+</ul>
+<hr>
+<h2 id="12-optional-computerdaweditor-guide">12. Optional computer/DAW/editor guide</h2>
+<p><strong>You do not need any of this for the primary experience you described.</strong> It becomes useful for saving backup Favorite sets, creating recordings, applying software effects, sequencing drums or exploring one-key chord generation in third-party software.</p>
+<h3 id="register-and-find-the-right-software">Register and find the right software</h3>
+<ol>
+<li>Go to the Akai/inMusic account portal from the [Akai website]<a class="source-ref" href="#17-research-notes-and-sources" title="See source S08">[S08]</a>.</li>
+<li>Register the <strong>Play mk3</strong> using its serial number.</li>
+<li>Download the appropriate <strong>MPK Mini Play MK3</strong> editor from the current official downloads list <a class="source-ref" href="#17-research-notes-and-sources" title="See source S20">[S20]</a>, and any bundled software currently offered in your account. Product marketing and software bundles can change over time.</li>
+<li>Follow the official setup walkthrough <a class="source-ref" href="#17-research-notes-and-sources" title="See source S08">[S08]</a>; use modern software menus where they differ from older screenshots.</li>
+</ol>
+<h3 id="how-to-connect-as-a-midi-controller">How to connect as a MIDI controller</h3>
+<ol>
+<li>Rear power switch to <strong>USB</strong>.</li>
+<li>Connect USB-B cable to PC/Mac.</li>
+<li>Disable <strong>Internal Sounds</strong> to avoid triggering the onboard audio engine at the same time as a software synth. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a></li>
+<li>Select MPK Mini Play mk3 (it can appear under a generic USB device name) as input in MPC Beats, GarageBand or another DAW. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a></li>
+<li>Listen via the <strong>computer's audio output</strong>, not expecting DAW audio to magically play out of the Akai's onboard speaker.</li>
+</ol>
+<h3 id="editor-backing-up-favorites">Editor: backing up Favorites</h3>
+<p>Akai's model-specific DAW article and restore guide describe the relevant actions [S05–S07]:</p>
+<ul>
+<li><strong>File &gt; Get Favorite:</strong> retrieve settings from the keyboard.</li>
+<li><strong>File &gt; Send Favorite:</strong> write current settings back to a selected Favorite slot.</li>
+<li><strong>File &gt; Save Favorite:</strong> save a backup preset file on the computer.</li>
+<li><strong>File &gt; Open Favorite:</strong> load a previously saved preset or Akai's defaults.</li>
+</ul>
+<p><strong>Close other MIDI-using apps before opening the Editor</strong>, otherwise the MIDI port may be unavailable. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S05">[S05]</a></p>
+<h3 id="different-midi-channels-for-keys-and-pads">Different MIDI channels for keys and pads</h3>
+<p>For software only, assign <strong>Keybed &amp; Controls to MIDI Channel 1</strong>, <strong>Pads to MIDI Channel 10</strong>, send the result as a Favorite, close editor, create/arm separate DAW tracks on those channels, then recall that Favorite. Akai publishes a Play mk3-specific procedure. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S05">[S05]</a></p>
+<h3 id="when-software-actually-adds-capability">When software actually adds capability</h3>
+<ul>
+<li>Record a four-bar beat or keyboard line, loop it and overdub.</li>
+<li>Play separate software instruments through key and drum tracks.</li>
+<li>Make MIDI-generated chords/scales using software plugins.</li>
+<li>Add <strong>real dedicated flanger, delay, compressor, phaser, amp simulation</strong> etc. in a DAW.</li>
+<li>Record vocals into a separate microphone/audio input.</li>
+</ul>
+<p>This is a second, computer-dependent musical mode. Your standalone Akai does not inherit all DAW features when unplugged.</p>
+<hr>
+<h2 id="13-what-it-cannot-do-and-external-gear">13. What it cannot do and external gear</h2>
+<h3 id="reality-check-table">Reality check table</h3>
+<table>
+<thead>
+<tr>
+<th>Request</th>
+<th>Standalone answer</th>
+<th>Best alternative</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Press C, automatically hear Cmaj7</td>
+<td><strong>No built-in one-finger chord mode documented</strong></td>
+<td>Learn C–E–G–B, use 3-note shell, or use software chord generator <a class="source-ref" href="#17-research-notes-and-sources" title="See source S19">[S19]</a></td>
+</tr>
+<tr>
+<td>Make a backing track loop and play another keyboard melody</td>
+<td><strong>No onboard phrase recorder or sequencer</strong></td>
+<td>DAW or an external looper <a class="source-ref" href="#17-research-notes-and-sources" title="See source S13">[S13]</a></td>
+</tr>
+<tr>
+<td>Generate independently looping drums</td>
+<td><strong>No drum-pattern sequencer</strong></td>
+<td>Live pads/Note Repeat, external looper or DAW</td>
+</tr>
+<tr>
+<td>Layer piano and organ together on keyboard</td>
+<td><strong>No documented internal multi-patch key split/layer</strong></td>
+<td>Software instruments / other hardware</td>
+</tr>
+<tr>
+<td>Keep arp and independently improvise on same keyboard</td>
+<td><strong>No independent second keyboard part</strong></td>
+<td>Sing over the arp or use an external looper/DAW</td>
+</tr>
+<tr>
+<td>Add exact tape delay or flanging</td>
+<td><strong>No dedicated onboard effects</strong></td>
+<td>Use onboard Chorus/Reverb creatively or add external audio FX</td>
+</tr>
+<tr>
+<td>Plug microphone directly into Akai</td>
+<td><strong>No mic input</strong></td>
+<td>Sing acoustically, or separate mic/mixer</td>
+</tr>
+<tr>
+<td>Pair Bluetooth earbuds</td>
+<td><strong>No built-in Bluetooth</strong></td>
+<td>Wired 3.5 mm IEMs; wireless transmitter adds latency</td>
+</tr>
+<tr>
+<td>Loudly amplify campfire for a large crowd</td>
+<td><strong>Mini speaker only</strong></td>
+<td>Powered speaker with compatible audio input; note speaker mute</td>
+</tr>
+</tbody>
+</table>
+<h3 id="about-a-looper-pedal">About a looper pedal</h3>
+<p>You <strong>can</strong> connect the analog headphone output to a compatible looper's input and layer recordings externally. But note: the keyboard's speaker <strong>mutes when any plug is inserted</strong>, and many guitar pedals have instrument/line-level outputs rather than headphone amplifiers. A real portable solution may need a looper with its own headphone jack or a separate powered mini speaker/headphone amplifier, compatible cable, battery/power and careful stereo-to-mono handling. It is possible, but significantly more gear than your original delightful one-instrument idea. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a></p>
+<h3 id="effect-distinction-chorus-vs-flanger-vs-delay">Effect distinction: chorus vs flanger vs delay</h3>
+<ul>
+<li><strong>Chorus (onboard):</strong> copies or modulates pitch/time slightly to create thickness and animation.</li>
+<li><strong>Reverb (onboard):</strong> places notes in a space with diffuse reflections.</li>
+<li><strong>Delay (not dedicated onboard):</strong> repeats a distinct echo at a time interval.</li>
+<li><strong>Flanger (not dedicated onboard):</strong> creates a moving comb-filter sweep by mixing with a short changing delay.</li>
+</ul>
+<p>Do not claim you've selected a 'flanger' preset just because the Chorus knob creates a similar swirling sensation. It's a musical analogy, not the same effect algorithm. <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a></p>
+<hr>
+<h2 id="14-troubleshooting-and-questions">14. Troubleshooting and questions</h2>
+<p><strong>Q: No sound when I press keys.</strong><br>
+A: Check battery switch/AA direction or USB power, master volume, and <strong>Internal Sounds enabled</strong>. If earbuds are connected, speaker should be silent by design. Select Keys and confirm you have a keyboard program <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a>.</p>
+<p><strong>Q: My built-in speaker was working, then stopped.</strong><br>
+A: Check whether anything is plugged into the <strong>3.5 mm</strong> output. That intentionally disables the speaker <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a>.</p>
+<p><strong>Q: Why can't I see the piano I saved?</strong><br>
+A: Recall it using <strong>Favorites + pad</strong>. If you overwrote that pad using <strong>Favorites + Internal Sounds + pad</strong>, use editor backup or factory Favorite restore, if available <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a><a class="source-ref" href="#17-research-notes-and-sources" title="See source S07">[S07]</a>.</p>
+<p><strong>Q: Can I hold a chord with a foot pedal?</strong><br>
+A: A standard <strong>momentary</strong> sustain footswitch can sustain notes while depressed <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a>. It is not a loop pedal and doesn't keep recording or layering notes.</p>
+<p><strong>Q: I have only four knobs, yet guides mention eight effects.</strong><br>
+A: That's correct: Knob Bank <strong>A</strong> chooses Filter/Resonance/Reverb/Chorus and Bank <strong>B</strong> chooses Attack/Release/Low EQ/High EQ <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a>.</p>
+<p><strong>Q: How many notes can I play?</strong><br>
+A: It is a polyphonic keyboard. An Akai mixed-generation FAQ cites 32 internal voices <a class="source-ref" href="#17-research-notes-and-sources" title="See source S11">[S11]</a>, but this shouldn't be interpreted as 32 independent multitimbral parts. The exact note-stealing behavior may depend on patch and sustain.</p>
+<p><strong>Q: Does Favorites recall happen instantly without cutting held sounds?</strong><br>
+A: The manual confirms the recall gesture, <strong>not the precise audio crossfade/held-note behavior</strong>. Test the transition, including reverb tails, and leave a phrase boundary if needed.</p>
+<p><strong>Q: Can I program drum loops?</strong><br>
+A: <strong>No, not standalone.</strong> You can play pads with Note Repeat, but there's no recorded beat sequencer <a class="source-ref" href="#17-research-notes-and-sources" title="See source S13">[S13]</a>.</p>
+<p><strong>Q: Can one key automatically trigger major/minor/diminished/maj7?</strong><br>
+A: <strong>No Play mk3 standalone chord mode is documented</strong>. The MPK Mini Plus has dedicated Chords and Scales modes <a class="source-ref" href="#17-research-notes-and-sources" title="See source S19">[S19]</a>. On your Play, play appropriate notes yourself or connect software.</p>
+<p><strong>Q: My Arp stopped when I disconnected from computer.</strong><br>
+A: Check for <strong>External</strong> sync; without incoming DAW clock, the arpeggiator may not have a pulse. Restore Internal sync through editor and recheck <a class="source-ref" href="#17-research-notes-and-sources" title="See source S09">[S09]</a>.</p>
+<p><strong>Q: Is the headphone jack a stereo line output?</strong><br>
+A: It is explicitly a <strong>headphone output</strong> suitable for earbuds and potentially an audio feed to compatible speakers. It is not labeled a dedicated line output; use appropriate level and impedance matching <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a>.</p>
+<p><strong>Q: Can I load new sound samples into the internal 128?</strong><br>
+A: No standalone sample-loading workflow is documented. 'Pads trigger samples in software' refers to a computer instrument, not to replacing the onboard ROM sound library <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a>.</p>
+<p><strong>Q: How do I turn it completely off on a camping trip?</strong><br>
+A: With no USB plugged in, slide rear switch to USB position to disconnect battery operation. Check that screen and sound are off <a class="source-ref" href="#17-research-notes-and-sources" title="See source S01">[S01]</a>.</p>
+<hr>
+
+<section class="chapter-visual" id="visual-practice" aria-label="30 day learning milestones">
+ <div class="visual-heading"><span class="eyebrow">07 / SELF-DIRECTED PRACTICE</span><h3>Four weeks, one musical goal</h3><p>Track your progress in the browser. The guide gives the full exercises; these are their performance milestones.</p></div>
+ <div class="practice-grid"><label class="practice-card"><input type="checkbox" class="practice-check" data-task="week1"/><span class="practice-number">WEEK 01</span><b>Keyboard geography</b><small>Play a familiar guitar progression as a one-minute keys arrangement.</small></label><label class="practice-card"><input type="checkbox" class="practice-check" data-task="week2"/><span class="practice-number">WEEK 02</span><b>Chords & inversions</b><small>Make an eight-bar progression with deliberate voice leading.</small></label><label class="practice-card"><input type="checkbox" class="practice-check" data-task="week3"/><span class="practice-number">WEEK 03</span><b>Sound & rhythm</b><small>Rehearse four Favorite transitions plus an arp or drum interlude.</small></label><label class="practice-card"><input type="checkbox" class="practice-check" data-task="week4"/><span class="practice-number">WEEK 04</span><b>Voice & performance</b><small>Sing one complete three-minute song without a computer.</small></label></div>
+ <div class="progress-readout"><div class="progress-track"><div class="progress-fill" id="practice-progress" style="width:0%"></div></div><span id="practice-status">0 of 4 milestones completed</span></div>
+ <div class="visual-note">This checklist uses optional local browser storage when available. The HTML itself requires no internet connection or account.</div>
+</section>
+<h2 id="15-a-30-day-self-directed-plan">15. A 30-day self-directed plan</h2>
+<p>A month of deliberate play is much more interesting than repeating elementary notation exercises. The complete day-by-day schedule is in <a href="https://drive.google.com/drive/folders/1jmNNLqu5Z8ITBsw-YQEslLYjlSqRSzX2"><code>research/11_guitar_to_keys_30_day_plan.md</code></a>.</p>
+<table>
+<thead>
+<tr>
+<th>Week</th>
+<th>Main competency</th>
+<th>Deliverable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Keyboard geometry; familiar guitar progressions played in new medium</td>
+<td>One-minute original verse + chorus on one patch</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Major/minor/diminished and seventh chords, inversions</td>
+<td>One 8-bar progression with deliberate voice leading</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Timbre, effects, arp, live pad rhythms, Favorites</td>
+<td>Four mapped sound changes and one rhythmic interlude</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Singing and playing, live transitions, camping logistics</td>
+<td>One complete three-minute song performed without computer</td>
+</tr>
+</tbody>
+</table>
+<h3 id="three-rules-for-productive-self-teaching">Three rules for productive self-teaching</h3>
+<ol>
+<li><strong>Every technique should quickly feed a song.</strong> Study triads to play one verse, inversions to connect two chords, seventh chords to create an emotional turn.</li>
+<li><strong>Do not mistake plugin abundance for creative depth.</strong> Pick one patch, understand its range, and write with it.</li>
+<li><strong>Practice the actual stage behavior.</strong> Singing, pressing a Favorite, recovering hand position and landing the next downbeat is an integrated skill.</li>
+</ol>
+<hr>
+<h2 id="16-printable-quick-reference">16. Printable quick reference</h2>
+<h3 id="bootingplaying">Booting/playing</h3>
+<ul>
+<li><strong>Power:</strong> 4 AA alkalines and BATTERY switch, or reliable USB power.</li>
+<li><strong>Hear onboard sounds:</strong> <strong>Internal Sounds ON</strong>.</li>
+<li><strong>Choose keyboard:</strong> <strong>Keys</strong>, rotate <strong>encoder</strong>.</li>
+<li><strong>Choose drums:</strong> <strong>Drums</strong>, rotate <strong>encoder</strong>.</li>
+<li><strong>Reset octave shift:</strong> press <strong>Octave Down and Up together</strong>.</li>
+<li><strong>Quiet practice:</strong> plug wired earbuds into 3.5 mm; <strong>speaker automatically mutes</strong>.</li>
+<li><strong>Share with listeners:</strong> lower volume, unplug earbuds, use built-in speaker.</li>
+</ul>
+<h3 id="live-performance-actions">Live-performance actions</h3>
+<table>
+<thead>
+<tr>
+<th>What you want</th>
+<th>Exact action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Save an organ with effects to slot 3</td>
+<td>Set sound/effects, <strong>hold Favorites + Internal Sounds</strong>, tap pad 3</td>
+</tr>
+<tr>
+<td>Return to piano on slot 1</td>
+<td><strong>Hold Favorites</strong>, tap pad 1</td>
+</tr>
+<tr>
+<td>Change organ to a synth without saving</td>
+<td><strong>Keys</strong>, rotate encoder</td>
+</tr>
+<tr>
+<td>Darken sound</td>
+<td>Bank <strong>A</strong>, knob <strong>1 Filter</strong></td>
+</tr>
+<tr>
+<td>Change attack/release</td>
+<td>Bank <strong>B</strong>, knobs <strong>1/2</strong></td>
+</tr>
+<tr>
+<td>Make notes cycle</td>
+<td>Press <strong>Arpeggiator On/Off</strong></td>
+</tr>
+<tr>
+<td>Make arp persist after releasing keys</td>
+<td>Hold Arp button + <strong>Latch</strong> labeled key</td>
+</tr>
+<tr>
+<td>Stop latched arp</td>
+<td>Press <strong>Arpeggiator On/Off</strong></td>
+</tr>
+<tr>
+<td>Set beat by hand</td>
+<td>Tap <strong>Tap Tempo</strong> (internal sync only)</td>
+</tr>
+<tr>
+<td>Repeat a drum hit</td>
+<td>Press <strong>Note Repeat</strong>, then play/hold pad</td>
+</tr>
+<tr>
+<td>Make all pad hits uniform loudness</td>
+<td>Press <strong>Full Level</strong></td>
+</tr>
+<tr>
+<td>Switch drum pad positions</td>
+<td><strong>Pad Bank A/B</strong></td>
+</tr>
+<tr>
+<td>Change 4 effect knobs' purpose</td>
+<td><strong>Knob Bank A/B</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="four-knob-pairs">Four knob pairs</h3>
+<p><code>BANK A: Filter | Resonance | Reverb | Chorus</code><br>
+<code>BANK B: Attack | Release | EQ Low | EQ High</code></p>
+<h3 id="no-surprises">No surprises</h3>
+<ul>
+<li><strong>No</strong> one-finger chord mode, built-in audio looper, recorded drum sequencer, microphone input, native Bluetooth, built-in dedicated delay/flanger, or free keyboard lead layered on top of its own latched arp.</li>
+<li><strong>Yes</strong> full chords played with your own fingers, 128 sounds, ten kits, expressive sound shaping, 8 live Favorite recalls, arp Latch, Note Repeat and battery-powered musical spontaneity.</li>
+</ul>
+<hr>
+<h2 id="17-research-notes-and-sources">17. Research notes and sources</h2>
+<p>The complete research archive lives under <a href="https://drive.google.com/drive/folders/1jmNNLqu5Z8ITBsw-YQEslLYjlSqRSzX2"><code>research/</code> </a> and includes source-by-source notes, controls, troubleshooting, a GM 128-program chart, a month of exercises and a song-section planning template.</p>
+<h3 id="core-sources">Core sources</h3>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Source</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S01</td>
+<td><a href="https://cdn.inmusicbrands.com/akai/mpk-mini-play-mk3/MPK%20mini%20Play%20mk3%20-%20User%20Guide%20-%20v1.1.pdf">Akai Play mk3 User Guide v1.1, official PDF</a></td>
+<td>Main authority for button combinations and connections</td>
+</tr>
+<tr>
+<td>S02</td>
+<td><a href="https://www.akaipro.com/mpk-mini-play-mk3/">Akai official product / technical specifications</a></td>
+<td>Size, battery, onboard audio</td>
+</tr>
+<tr>
+<td>S03</td>
+<td><a href="https://support.akaipro.com/en/support/solutions/articles/69000805679-akai-pro-mpk-mini-play-mk3-onboard-features-standalone-use">Akai standalone walkthrough</a></td>
+<td>Chaptered instruction</td>
+</tr>
+<tr>
+<td>S04</td>
+<td><a href="https://www.youtube.com/watch?v=QTLGsW9tlw4">Official inMusic YouTube video</a></td>
+<td>0:32 power; 1:34 Keys; 4:08 Arp; 8:29 Favorites</td>
+</tr>
+<tr>
+<td>S05</td>
+<td><a href="https://support.akaipro.com/en/support/solutions/articles/69000876799-akai-pro-mpk-mini-series-how-to-play-pads-and-keys-at-the-same-time-in-any-daw">Akai: pads and keys simultaneously in a DAW</a></td>
+<td>Play mk3 editor and MIDI channels</td>
+</tr>
+<tr>
+<td>S06</td>
+<td><a href="https://support.akaipro.com/en/support/solutions/articles/69000859755-mpk-mini-series-how-to-program-mpk-mini-pads-in-a-daw">Akai: program pads in a DAW</a></td>
+<td>Assign pad notes, save as Favorite</td>
+</tr>
+<tr>
+<td>S07</td>
+<td><a href="https://support.akaipro.com/en/support/solutions/articles/69000858651-akai-pro-mpk-mini-series-how-to-restore-factory-presets">Akai: restore factory Favorites</a></td>
+<td>Recovery procedure</td>
+</tr>
+<tr>
+<td>S08</td>
+<td><a href="https://support.akaipro.com/en/support/solutions/articles/69000798879-akai-pro-mpk-mini-and-mpk-mini-play-how-to-download-install-and-setup-the-included-software">Akai: included software setup</a></td>
+<td>Registration and DAW</td>
+</tr>
+<tr>
+<td>S09</td>
+<td><a href="https://support.akaipro.com/en/support/solutions/articles/69000869904-akai-pro-mpk-sync-external-clock-to-arp-and-note-repeat">Akai: sync external clock</a></td>
+<td>Troubleshoot MIDI clock</td>
+</tr>
+<tr>
+<td>S11</td>
+<td><a href="https://support.akaipro.com/en/support/solutions/articles/69000798894-akai-pro-mpk-mini-play-frequently-asked-questions">Akai: older mixed-model Play FAQ</a></td>
+<td><strong>CAUTION:</strong> 3-AA statement conflicts with mk3</td>
+</tr>
+<tr>
+<td>S13</td>
+<td><a href="https://www.soundonsound.com/reviews/akai-mpk-mini-play-mkiii">Sound On Sound, August 2022 independent review</a></td>
+<td>Critical feature bounds, live use</td>
+</tr>
+<tr>
+<td>S14</td>
+<td><a href="https://musictech.com/reviews/controllers/akai-mpk-mini-play-mk3-review/">MusicTech, May 2022 independent review</a></td>
+<td>Sound quality, speaker clipping at high levels</td>
+</tr>
+<tr>
+<td>S15</td>
+<td><a href="https://www.youtube.com/watch?v=Q_D8EOVNpS0">Stamatis Stabos demo</a></td>
+<td>Setup and sound demos</td>
+</tr>
+<tr>
+<td>S16</td>
+<td><a href="https://midi.org/general-midi-level-1">MIDI Association General MIDI 1</a></td>
+<td>Standard patch convention</td>
+</tr>
+<tr>
+<td>S17</td>
+<td><a href="https://www.cs.cmu.edu/~music/cmp/archives/cmsip/readings/GMSpecs_Patches.htm">Carnegie Mellon GM patch map</a></td>
+<td>Reference families/numbering</td>
+</tr>
+<tr>
+<td>S18</td>
+<td><a href="https://midi.community/docs/general-midi/">MIDI Field Guide GM list</a></td>
+<td>0/1 indexing caveat</td>
+</tr>
+<tr>
+<td>S19</td>
+<td><a href="https://support.akaipro.com/en/support/solutions/articles/69000803493-akai-pro-mpk-mini-plus-frequently-asked-questions">Akai MPK Mini Plus FAQ</a></td>
+<td>Chords/Scales belong to <em>another model</em></td>
+</tr>
+<tr>
+<td>S20</td>
+<td><a href="https://www.akaipro.com/downloads-and-support/downloads/">Akai download directory</a></td>
+<td>Correct mk3 editor/updates</td>
+</tr>
+</tbody>
+</table>
+<h3 id="how-to-use-the-archive-offline">How to use the archive offline</h3>
+<p>This main Markdown guide and all other text files are available offline <strong>after downloading the package</strong>. External URLs and YouTube videos require a connection, so download official manufacturer PDF separately before heading into a no-reception location. An attempt to fetch the official PDF into this environment did not succeed; the direct verified link is supplied above.</p>
+<h3 id="research-quality-notes">Research quality notes</h3>
+<ol>
+<li>No physical instrument was available for a bench test. Claims about <strong>hardware behavior</strong> come from the official Play mk3 user guide where possible, cross-checked against independent reviews.</li>
+<li>Exact manufacturer patch numbers, uninterrupted audio on Favorites switch, and any unusual USB power-bank behavior are <strong>test-on-device</strong> items.</li>
+<li>This guide intentionally excludes unsupported promises about loop recording, chord buttons, user-sample loading or dedicated flanger/delay in standalone mode.</li>
+<li>Sound-editing and performance examples are <strong>original creative exercises</strong>, not advertised manufacturer presets.</li>
+</ol>
+<hr>
+<p><strong>Closing principle:</strong> Let the instrument's technical limitations establish a small playable world, then use composition, rhythm, harmony, timbre and singing to make that world astonishing. The object is portable. The music is yours.</p>
+</article><footer class="footer"><strong>About this illustrated edition.</strong> This HTML preserves the complete source guide and adds original diagrams and interactive practice tools. Browser simulations teach musical concepts; they do not add features to the physical Akai. No remote fonts, scripts, images, audio files, or network access are needed for this page. External source/reference links naturally require internet. Built from <code>akai_howto_v1.md</code>; SHA-256 <code>6220d721174f0442…</code>.</footer></main></div></div><script>
+(()=>{'use strict';
+const $=(s,root=document)=>root.querySelector(s); const $$=(s,root=document)=>Array.from(root.querySelectorAll(s));
+// UI controls are a learning aid, never command the physical keyboard.
+const bankData={A:[['Filter','Darken or brighten the sound'],['Resonance','Emphasize the filter character'],['Reverb','Give the notes a sense of space'],['Chorus','Thicken or animate the sound']],B:[['Attack','Soften or sharpen the note onset'],['Release','Change how the sound fades out'],['Low EQ','Shape low-frequency body'],['High EQ','Shape brightness and detail']]};
+$$('.bank-btn').forEach(btn=>btn.addEventListener('click',()=>{const bank=btn.dataset.bank;$$('.bank-btn').forEach(b=>{b.classList.toggle('active',b===btn);b.setAttribute('aria-pressed',String(b===btn));});$$('#knob-grid .knob-tile').forEach((tile,i)=>{tile.querySelector('b').textContent=bankData[bank][i][0];tile.querySelector('small').textContent=bankData[bank][i][1];});}));
+const fav=[['Quiet introduction','Dry electric piano','Introduce the motif with space for your voice.','Reverb: low · Chorus: low'],['First verse','Soft organ','Single notes or sparse intervals under the vocal.','Reverb: subtle · Chorus: subtle'],['Developing verse','Same organ, warmer','Two-note harmony and gentle harmonic motion.','EQ: warm · Chorus: moderate'],['Atmospheric lift','Warm synth pad','Sustain a few chords and let the vocal take the foreground.','Attack: softer · Release: longer'],['Pre-chorus tension','String or choir-like sound','Extend harmony and prepare the arrival of the chorus.','Reverb: medium'],['First big chorus','Bright organ','Build with triads, seventh colors, and stronger rhythm.','Chorus: medium · Reverb: medium'],['Bridge / contrast','Bell or synth lead','Create a new question in the song before the return.','Effects: restrained'],['Final transformation','Full-bodied organ','Bring the motif home with rich voicings and a powerful vocal.','Chorus: stronger · Reverb: deliberate']];
+$$('.fav-pad').forEach(b=>b.addEventListener('click',()=>{const n=+b.dataset.fav;$$('.fav-pad').forEach(x=>x.classList.toggle('selected',x===b));$('#fav-title').textContent=String(n+1).padStart(2,'0')+' / '+fav[n][0];$('#fav-patch').textContent=fav[n][1];$('#fav-description').textContent=fav[n][2];$('#fav-effect').textContent=fav[n][3];}));
+const rootDefs=[{name:'C',pc:0},{name:'C♯',pc:1},{name:'D',pc:2},{name:'E♭',pc:3},{name:'E',pc:4},{name:'F',pc:5},{name:'F♯',pc:6},{name:'G',pc:7},{name:'A♭',pc:8},{name:'A',pc:9},{name:'B♭',pc:10},{name:'B',pc:11}];
+const qualities={
+ maj:{name:'Major',suffix:'',intervals:[0,4,7],degrees:[1,3,5],roles:['R','3','5']},
+ min:{name:'Minor',suffix:'m',intervals:[0,3,7],degrees:[1,3,5],roles:['R','♭3','5']},
+ dim:{name:'Diminished',suffix:'dim',intervals:[0,3,6],degrees:[1,3,5],roles:['R','♭3','♭5']},
+ aug:{name:'Augmented',suffix:'aug',intervals:[0,4,8],degrees:[1,3,5],roles:['R','3','♯5']},
+ sus2:{name:'Suspended 2',suffix:'sus2',intervals:[0,2,7],degrees:[1,2,5],roles:['R','2','5']},
+ sus4:{name:'Suspended 4',suffix:'sus4',intervals:[0,5,7],degrees:[1,4,5],roles:['R','4','5']},
+ maj7:{name:'Major 7',suffix:'maj7',intervals:[0,4,7,11],degrees:[1,3,5,7],roles:['R','3','5','7']},
+ '7':{name:'Dominant 7',suffix:'7',intervals:[0,4,7,10],degrees:[1,3,5,7],roles:['R','3','5','♭7']},
+ min7:{name:'Minor 7',suffix:'m7',intervals:[0,3,7,10],degrees:[1,3,5,7],roles:['R','♭3','5','♭7']},
+ m7b5:{name:'Half-diminished 7',suffix:'m7♭5',intervals:[0,3,6,10],degrees:[1,3,5,7],roles:['R','♭3','♭5','♭7']},
+ dim7:{name:'Diminished 7',suffix:'dim7',intervals:[0,3,6,9],degrees:[1,3,5,7],roles:['R','♭3','♭5','♭♭7']},
+ '6':{name:'Major 6',suffix:'6',intervals:[0,4,7,9],degrees:[1,3,5,6],roles:['R','3','5','6']},
+ add9:{name:'Add9',suffix:'add9',intervals:[0,4,7,14],degrees:[1,3,5,9],roles:['R','3','5','9']}
+};
+const LETTERS=['C','D','E','F','G','A','B'], natural={C:0,D:2,E:4,F:5,G:7,A:9,B:11};
+function mod(a,b){return(a%b+b)%b;} function noteToName(pc){const labels=['C','C♯','D','E♭','E','F','F♯','G','A♭','A','B♭','B'];return labels[mod(pc,12)];}
+function spelledChord(root,quality){let letter=LETTERS.indexOf(root.name[0]);return quality.degrees.map((deg,i)=>{const idx=(letter+((deg-1)%7))%7;const letterName=LETTERS[idx];let pc=mod(root.pc+quality.intervals[i],12);let delta=mod(pc-natural[letterName],12);if(delta>6)delta-=12; const accidentals= delta===0?'':delta===1?'♯':delta===2?'♯♯':delta===-1?'♭':delta===-2?'♭♭':(delta>0?'♯'.repeat(delta):'♭'.repeat(-delta)); return letterName+accidentals;});}
+const svgNS='http://www.w3.org/2000/svg';function E(tag,attrs,text){const el=document.createElementNS(svgNS,tag);Object.entries(attrs||{}).forEach(([k,v])=>el.setAttribute(k,v));if(text!==undefined)el.textContent=String(text);return el;}
+function updateChord(){const root=rootDefs[+$('#chord-root').value],quality=qualities[$('#chord-quality').value];let inv=+$('#chord-inversion').value;$$('#chord-inversion option').forEach((o,i)=>{o.disabled=i>=quality.intervals.length;});if(inv>=quality.intervals.length){inv=0;$('#chord-inversion').value='0';}
+ const midiRoot=60+root.pc;const sorted=quality.intervals.map((off,i)=>({midi:midiRoot+off,name:spelledChord(root,quality)[i],role:quality.roles[i],isRoot:i===0}));
+ for(let i=0;i<inv;i++)sorted[i].midi+=12;
+ sorted.sort((a,b)=>a.midi-b.midi);
+ const min=sorted[0].midi,max=sorted[sorted.length-1].midi;const span=max-min;const start=min-Math.max(0,Math.floor((24-span)/2));const end=start+24; const notes=[];for(let m=start;m<=end;m++)notes.push(m);
+ const isBlack=m=>[1,3,6,8,10].includes(mod(m,12));let whiteN=notes.filter(m=>!isBlack(m));const width=46,baseX=18,keyY=10,whiteH=153,blackH=94;
+ const svg=$('#chord-keyboard');while(svg.firstChild)svg.removeChild(svg.firstChild);svg.setAttribute('viewBox',`0 0 ${whiteN.length*width+36} 194`);
+ svg.append(E('rect',{x:0,y:0,width:whiteN.length*width+36,height:194,rx:12,fill:'#e6e8dd'}));const centers={};
+ whiteN.forEach((m,i)=>{const x=baseX+i*width;centers[m]=x+width/2;let item=sorted.find(n=>n.midi===m),fill=item?(item.isRoot?'#1f796b':'#f1c673'):'#faf9f4';svg.append(E('rect',{x,y:keyY,width:width-1,height:whiteH,rx:3,fill,stroke:'#768780','stroke-width':1.3}));svg.append(E('text',{x:x+width/2,y:153,'text-anchor':'middle',fill:item&&item.isRoot?'#fff':'#3f514c','font-family':'system-ui,sans-serif','font-weight':item?800:650,'font-size':item?14:11},noteToName(m)));if(item){svg.append(E('rect',{x:x+8,y:115,width:width-16,height:21,rx:5,fill:item.isRoot?'#16594f':'#b88736'}));svg.append(E('text',{x:x+width/2,y:130,'text-anchor':'middle',fill:'#fff','font-family':'system-ui,sans-serif','font-weight':850,'font-size':12},item.role));}});
+ notes.filter(isBlack).forEach(m=>{let prev=m-1;while(isBlack(prev))prev--;if(centers[prev]===undefined)return;const x=centers[prev]+width/2-14;let item=sorted.find(n=>n.midi===m);const blackFill=item?(item.isRoot?'#1f796b':'#d5a04e'):'#243935';svg.append(E('rect',{x,y:keyY,width:28,height:blackH,rx:3,fill:blackFill,stroke:'#243935','stroke-width':1.2}));if(item){svg.append(E('text',{x:x+14,y:44,'text-anchor':'middle',fill:'#fff','font-family':'system-ui,sans-serif','font-weight':850,'font-size':11},item.role));}});
+ svg.append(E('text',{x:17,y:184,fill:'#435751','font-size':11,'font-weight':750,'font-family':'ui-monospace,monospace'},noteToName(start)+Math.floor(start/12-1)));
+ svg.append(E('text',{x:whiteN.length*width+17,y:184,fill:'#435751','font-size':11,'font-weight':750,'text-anchor':'end','font-family':'ui-monospace,monospace'},noteToName(end)+Math.floor(end/12-1)));
+ $('#chord-name').textContent=root.name+quality.suffix;$('#chord-notes').textContent=sorted.map(n=>n.name).join(' · ');$('#chord-formula').textContent=quality.intervals.join(' · ');$('#chord-caption').textContent='Two-octave viewing window ('+noteToName(start)+Math.floor(start/12-1)+' to '+noteToName(end)+Math.floor(end/12-1)+'), shifted to fit this voicing. The Akai has 25 physical keys; use its Octave buttons to reach other registers.';svg.setAttribute('aria-label',`${root.name}${quality.suffix} chord, notes ${sorted.map(n=>n.name).join(', ')}`);
+}
+['chord-root','chord-quality','chord-inversion'].forEach(id=>$('#'+id).addEventListener('change',updateChord));updateChord();
+function updateArp(){const d=$('#arp-direction').value,div=$('#arp-division').value,swing=$('#arp-swing').value;let count=div==='4'?4:div==='8'?8:div==='16'?16:12;let p={up:['C','E','G'],down:['G','E','C'],incl:['C','E','G','G','E','C'],excl:['C','E','G','E'],order:['C','E','G']}[d];const grid=$('#arp-grid');grid.innerHTML='';grid.style.gridTemplateColumns=`repeat(${count},minmax(0,1fr))`;
+ let show=[];for(let i=0;i<count;i++){let n=p[i%p.length];show.push(n);let tile=document.createElement('div');tile.className='arp-step'+(swing==='61'&&i%2?' swung':'');tile.innerHTML='<small>'+(i+1)+'</small><b>'+n+'</b>';grid.append(tile);}$('#arp-sequence').textContent=show.join(' → ') + (swing==='61'?'  ·  Swung feel illustrated':'');}
+['arp-direction','arp-division','arp-swing'].forEach(id=>$('#'+id).addEventListener('change',updateArp));updateArp();
+$$('.route-btn').forEach(b=>b.addEventListener('click',()=>{const priv=b.dataset.route==='private';$$('.route-btn').forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',String(x===b));});$('#route-ear').className='route-device '+(priv?'is-live':'is-muted');$('#route-speaker').className='route-device '+(priv?'is-muted':'is-live');$('#route-ear').querySelector('small').textContent=priv?'Your 7Hz Zero:3':'Not connected';$('#route-speaker').querySelector('small').textContent=priv?'Automatically muted while plugged in':'Available for live sharing';$('#route-comment').textContent=priv?'Headphones connected: practice silently and keep the speaker muted.':'Headphones unplugged: the internal speaker can reproduce your performance.';}));
+function updateProgress(){let done=$$('.practice-check').filter(x=>x.checked).length;$('#practice-progress').style.width=(done*25)+'%';$('#practice-status').textContent=done+' of 4 milestones completed';try{localStorage.setItem('akai-practice-progress',JSON.stringify($$('.practice-check').map(x=>x.checked)));}catch(e){}}
+try{const saved=JSON.parse(localStorage.getItem('akai-practice-progress')||'null');if(Array.isArray(saved))$$('.practice-check').forEach((x,i)=>x.checked=!!saved[i]);}catch(e){}
+$$('.practice-check').forEach(x=>x.addEventListener('change',updateProgress));updateProgress();
+const darkBtn=$('#toggle-theme');darkBtn.addEventListener('click',()=>{document.body.classList.toggle('dark');const dark=document.body.classList.contains('dark');darkBtn.textContent=dark?'☼ Light mode':'☾ Dark mode';try{localStorage.setItem('akai-theme',dark?'dark':'light');}catch(e){}});try{if(localStorage.getItem('akai-theme')==='dark'){document.body.classList.add('dark');darkBtn.textContent='☼ Light mode';}}catch(e){}
+$('#print-guide').addEventListener('click',()=>window.print());
+const menu=$('#menu-toggle'),side=$('.side');menu.addEventListener('click',()=>{const opened=side.classList.toggle('open');menu.setAttribute('aria-expanded',String(opened));});$$('.side nav a').forEach(a=>a.addEventListener('click',()=>{side.classList.remove('open');menu.setAttribute('aria-expanded','false');}));
+const toc=$$('.side nav a');const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){toc.forEach(a=>a.classList.toggle('current',a.getAttribute('href')==='#'+entry.target.id));}}},{rootMargin:'-15% 0px -72% 0px'});toc.forEach(a=>{const sec=document.getElementById(a.getAttribute('href').slice(1));if(sec)observer.observe(sec);});
+})();
+</script></body></html>
